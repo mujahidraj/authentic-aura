@@ -85,6 +85,13 @@ export function NavBar({ onContactOpen }: NavBarProps) {
             </a>
           );
         })}
+        <a
+          href="/docs"
+          className="font-mono text-xs uppercase tracking-widest transition-colors duration-200"
+          style={{ color: 'hsl(var(--muted-foreground))' }}
+        >
+          Docs
+        </a>
       </nav>
 
       {/* CTA */}
