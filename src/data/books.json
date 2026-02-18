@@ -1,0 +1,56 @@
+[
+  {
+    "id": "b1",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "color": "#854d0e",
+    "height": "h-64",
+    "review": "The handbook for craftsmanship. A must-read for leaving the campsite cleaner than you found it.",
+    "rating": 5
+  },
+  {
+    "id": "b2",
+    "title": "Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "color": "#1e3a8a",
+    "height": "h-64",
+    "review": "Changed how I approach problems. 'Don't Repeat Yourself' is my mantra now.",
+    "rating": 5
+  },
+  {
+    "id": "b3",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "color": "#991b1b",
+    "height": "h-64",
+    "review": "Small improvements compound into massive changes. Applied this to my coding practice.",
+    "rating": 4
+  },
+  {
+    "id": "b4",
+    "title": "Refactoring UI",
+    "author": "Adam Wathan",
+    "color": "#581c87",
+    "height": "h-64",
+    "review": "The bridge between developer and designer. Practical tactics over abstract theory.",
+    "rating": 5
+  },
+  {
+    "id": "b5",
+    "title": "Zero to One",
+    "author": "Peter Thiel",
+    "color": "#14532d",
+    "height": "h-64",
+    "review": "Vertical progress vs Horizontal progress. Essential for startup thinking.",
+    "rating": 4
+  },
+  {
+    "id": "b6",
+    "title": "Data Intensive Apps",
+    "author": "Martin Kleppmann",
+    "color": "#9a3412",
+    "height": "h-64",
+    "review": "The bible for backend engineering. Distributed systems demystified.",
+    "rating": 5
+  }
+]

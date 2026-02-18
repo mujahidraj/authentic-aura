@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { MagneticButton } from './MagneticButton';
@@ -98,7 +99,7 @@ export function GlobeHero({ onScrollToWork }: { onScrollToWork?: () => void }) {
           transition={{ delay: 0.5, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <p className="section-label mb-6 tracking-[0.5em]">
-            Full-Stack Engineer · Data Scientist · Researcher
+            Full-Stack Engineer · Data Sicence Enthusiast · Wordpress Expert · Information System
           </p>
         </motion.div>
 
@@ -106,10 +107,11 @@ export function GlobeHero({ onScrollToWork }: { onScrollToWork?: () => void }) {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-          className="font-display text-6xl md:text-8xl lg:text-9xl font-black leading-none tracking-tight mb-6"
+          className="font-display text-3xl md:text-5xl lg:text-6xl font-black leading-none tracking-tight mb-6"
         >
-          <span className="text-foreground">Your</span>{' '}
-          <span className="text-gradient-primary text-glow-primary">Name</span>
+          <span className="text-foreground">Moizuddin Mohammad</span>{' '}
+          <span className="text-gradient-primary text-glow-primary">Mujahid Rashid</span>
+
         </motion.h1>
 
         <motion.p
@@ -118,7 +120,7 @@ export function GlobeHero({ onScrollToWork }: { onScrollToWork?: () => void }) {
           transition={{ delay: 1.0, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="font-mono text-muted-foreground text-base md:text-lg mb-10 max-w-xl mx-auto leading-relaxed"
         >
-          Building intelligent systems at the intersection of data, design & the Global South.{' '}
+          Building intelligent systems at the intersection of data, design & the Global Region.{' '}
           <span style={{ color: 'hsl(var(--primary))' }}>Based in Dhaka, Bangladesh.</span>
         </motion.p>
 

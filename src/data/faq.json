@@ -1,0 +1,22 @@
+[
+  {
+    "id": "faq-1",
+    "question": "What is your typical project timeline?",
+    "answer": "Timelines vary based on complexity. A standard MVP typically takes 4-6 weeks, while more complex enterprise solutions can take 3-6 months. I provide a detailed roadmap before starting."
+  },
+  {
+    "id": "faq-2",
+    "question": "Do you offer post-launch support?",
+    "answer": "Absolutely. I provide 30 days of free bug-fixing and support after launch. Longer-term maintenance contracts are also available for continuous updates and monitoring."
+  },
+  {
+    "id": "faq-3",
+    "question": "What technologies do you specialize in?",
+    "answer": "My primary stack includes React/Next.js, Node.js, TypeScript, and AWS. However, I am a firm believer in using the right tool for the job and can adapt to your specific tech needs."
+  },
+  {
+    "id": "faq-4",
+    "question": "How do we handle communication during the project?",
+    "answer": "I primarily use Slack or Discord for daily async updates, and scheduled Zoom/Google Meet calls for weekly syncs. You will also have access to a real-time dashboard to track progress."
+  }
+]

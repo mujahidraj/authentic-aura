@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { X, Send, Loader2 } from 'lucide-react';
 import type { PricingData } from '../hooks/usePortfolioData';
+import { SectionWrapper } from './SectionWrapper';
+import HoloCard from './HoloCard';
 
 const schema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -137,6 +139,12 @@ export function ContactPanel({ isOpen, onClose, pricing }: ContactPanelProps) {
                   </button>
                 </form>
               )}
+
+              <SectionWrapper className="w-full">
+  <Suspense fallback={<div className="h-64 w-full bg-black/20" />}>
+    <HoloCard />
+  </Suspense>
+</SectionWrapper>
 
               {/* Pricing teasers */}
               <div className="mt-10 pt-8 border-t" style={{ borderColor: 'hsl(var(--border) / 0.5)' }}>

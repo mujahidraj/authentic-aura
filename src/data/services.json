@@ -1,0 +1,30 @@
+[
+  {
+    "id": "s1",
+    "title": "Full-Stack Development",
+    "description": "Building robust, scalable web applications from scratch using modern technologies like React, Node.js, and PostgreSQL.",
+    "icon": "Code",
+    "tags": ["Web App", "API", "Database"]
+  },
+  {
+    "id": "s2",
+    "title": "UI/UX Design & Prototyping",
+    "description": "Crafting intuitive and visually appealing user interfaces. Transforming complex ideas into interactive prototypes.",
+    "icon": "PenTool",
+    "tags": ["Figma", "Wireframing", "User Research"]
+  },
+  {
+    "id": "s3",
+    "title": "Cloud Architecture & DevOps",
+    "description": "Designing secure and scalable cloud infrastructure on AWS. implementing CI/CD pipelines for automated deployment.",
+    "icon": "Cloud",
+    "tags": ["AWS", "Docker", "CI/CD"]
+  },
+  {
+    "id": "s4",
+    "title": "Technical Consultation",
+    "description": "Providing expert advice on technology stack selection, system architecture, and best practices for software development.",
+    "icon": "MessageSquare",
+    "tags": ["Strategy", "Architecture", "Mentorship"]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "t1",
+    "name": "Sarah Jenkins",
+    "role": "CTO",
+    "company": "TechFlow",
+    "text": "Mujahid didn't just write code; he architected a solution that scaled our backend by 300%.",
+    "audio": "https://actions.google.com/sounds/v1/science_fiction/scifi_industrial_alarm.ogg" 
+  },
+  {
+    "id": "t2",
+    "name": "David Ross",
+    "role": "Founder",
+    "company": "StartUp Inc",
+    "text": "I was skeptical about the timeline, but he delivered two days early. The animations are buttery smooth.",
+    "audio": "https://actions.google.com/sounds/v1/science_fiction/robot_movement_sequence.ogg"
+  },
+  {
+    "id": "t3",
+    "name": "Elena Rodriguez",
+    "role": "Product Manager",
+    "company": "Creative Labs",
+    "text": "The 3D globe visualization he built is the highlight of our new landing page. Absolutely stunning work.",
+    "audio": "https://actions.google.com/sounds/v1/science_fiction/scifi_drone_taking_off.ogg"
+  }
+]

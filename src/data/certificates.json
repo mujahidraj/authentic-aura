@@ -1,0 +1,38 @@
+[
+  {
+    "id": "c1",
+    "title": "AWS Certified Solutions Architect",
+    "issuer": "Amazon Web Services",
+    "date": "Jan 2025",
+    "credentialId": "AWS-1234-5678",
+    "link": "https://aws.amazon.com/verification",
+    "tags": ["Cloud", "Architecture"]
+  },
+  {
+    "id": "c2",
+    "title": "Meta Front-End Developer Professional",
+    "issuer": "Meta / Coursera",
+    "date": "Dec 2024",
+    "credentialId": "COURSERA-890",
+    "link": "#",
+    "tags": ["React", "UX/UI"]
+  },
+  {
+    "id": "c3",
+    "title": "Google Data Analytics Professional",
+    "issuer": "Google",
+    "date": "Nov 2024",
+    "credentialId": "GOOGLE-DA-555",
+    "link": "#",
+    "tags": ["Data Science", "R"]
+  },
+  {
+    "id": "c4",
+    "title": "Advanced React Patterns",
+    "issuer": "Frontend Masters",
+    "date": "Oct 2024",
+    "credentialId": "FM-REACT-adv",
+    "link": "#",
+    "tags": ["React", "Performance"]
+  }
+]
