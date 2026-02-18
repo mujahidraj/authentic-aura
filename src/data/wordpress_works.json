@@ -1,79 +1,79 @@
 [
   {
-    "id": "wp-001",
-    "title": "Daily Star Digital Rebuild",
-    "subtitle": "News portal modernization for Bangladesh's leading English daily",
-    "description": "Complete redesign and performance optimization of a high-traffic news portal. Migrated to headless WordPress with React front-end, achieving 68% improvement in Core Web Vitals and 40% reduction in bounce rate.",
-    "story": "Legacy media properties face a paradox: they have the content but lose readers to slow, ad-cluttered experiences. This project was about respecting both the archive and the reader.",
-    "tags": ["WordPress", "React", "GraphQL", "WPGraphQL", "Performance", "SEO", "Headless CMS"],
+    "id": "wp-titan-forge",
+    "title": "Titan Forge Fitness",
+    "subtitle": "High-Performance Gym & Athlete Hub",
+    "description": "A dynamic fitness platform designed for high-intensity training centers. It features integrated class scheduling, membership tiers, and a mobile-responsive interface optimized for athletes on the go.",
+    "story": "This project was about capturing the raw energy of a forge. We moved away from generic fitness templates to create a high-contrast, motivating digital environment that reflects the physical intensity of the gym.",
+    "tags": ["WordPress", "Elementor", "Custom CSS", "Fitness Tech", "Performance"],
     "type": "wordpress",
     "status": "completed",
-    "year": "2023",
+    "year": "2025",
     "images": [
-      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&auto=format"
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&auto=format"
     ],
     "links": {
-      "demo": "https://thedailystar.net",
-      "github": null,
+      "demo": "https://twtech-hub.github.io/Titan-Forge-Fitness-D4/",
+      "github": "https://github.com/twtech-hub/Titan-Forge-Fitness-D4",
       "paper": null
     },
     "featured": true,
     "size": "large",
     "metrics": {
-      "lcp": "1.2s",
-      "bounceReduction": "40%",
-      "coreWebVitals": "+68%"
+      "loadTime": "0.9s",
+      "interactivity": "High",
+      "responsiveness": "100%"
     }
   },
   {
-    "id": "wp-002",
-    "title": "Chaaklader Fashion",
-    "subtitle": "Luxury e-commerce for artisan textile brand",
-    "description": "Custom WooCommerce experience for a high-end Bangladeshi fashion label. Features product configurator, virtual try-on prototype, and multilingual support (Bengali/English). Integrated with bKash and Stripe payment gateways.",
-    "story": "Bangladeshi artisan fashion deserves the same digital treatment as European luxury brands. This project was about elevating a local brand to global standards.",
-    "tags": ["WordPress", "WooCommerce", "PHP", "JavaScript", "bKash API", "Stripe", "SEO", "Performance"],
+    "id": "wp-justice-chamber",
+    "title": "Justice Chamber",
+    "subtitle": "Legal Consultancy & Firm Portal",
+    "description": "A professional digital presence for legal practitioners. This platform organizes complex legal services into an intuitive architecture, featuring appointment booking and secure client inquiry forms.",
+    "story": "Trust is the currency of the legal profession. I built Justice Chamber to communicate authority and reliability through minimalist typography and a structured information hierarchy.",
+    "tags": ["WordPress", "CMS", "LegalTech", "Professional Services", "SEO"],
     "type": "wordpress",
     "status": "completed",
-    "year": "2023",
+    "year": "2024",
     "images": [
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&auto=format"
+      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&auto=format"
     ],
     "links": {
-      "demo": "https://chaaklader.com",
-      "github": null,
+      "demo": "https://twtech-hub.github.io/Justice-Chamber-D1/",
+      "github": "https://github.com/twtech-hub/Justice-Chamber-D1",
       "paper": null
     },
     "featured": false,
     "size": "medium",
     "metrics": {
-      "conversionIncrease": "+55%",
-      "avgOrderValue": "+30%",
-      "pageSpeed": "94/100"
+      "accessibilityScore": "98/100",
+      "seoRanking": "Optimized",
+      "pageSpeed": "92/100"
     }
   },
   {
-    "id": "wp-003",
-    "title": "MedAccess BD",
-    "subtitle": "Healthcare directory & telemedicine portal",
-    "description": "A WordPress-based healthcare directory for Bangladesh connecting patients with verified doctors. Features geolocation-based search, telemedicine booking, prescription management, and HIPAA-aligned data handling.",
-    "story": "Healthcare information in Bangladesh is fragmented and unreliable. This platform started as a simple directory and evolved into a critical infrastructure piece during the COVID-19 response.",
-    "tags": ["WordPress", "PHP", "Google Maps API", "Custom Plugin", "REST API", "Performance", "SEO"],
+    "id": "wp-portfolio-d3",
+    "title": "Professional Persona D3",
+    "subtitle": "Interactive Developer Showcase",
+    "description": "A sophisticated portfolio template built to highlight technical skills and project archives. Features custom transition effects and a content-first layout designed for the modern tech professional.",
+    "story": "Built as part of our internal D3 design sprint at TechWisdom, this project explores how to balance heavy project data with a clean, non-distracting user interface.",
+    "tags": ["WordPress", "Custom Theme", "JavaScript", "Portfolio", "UI Design"],
     "type": "wordpress",
     "status": "completed",
-    "year": "2022",
+    "year": "2024",
     "images": [
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&auto=format"
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format"
     ],
     "links": {
-      "demo": "https://medaccess.com.bd",
-      "github": null,
+      "demo": "https://twtech-hub.github.io/Portfolio-D3/",
+      "github": "https://github.com/twtech-hub/Portfolio-D3",
       "paper": null
     },
     "featured": false,
     "size": "small",
     "metrics": {
-      "monthlyUsers": "85K",
-      "doctorsListed": "2,400+",
+      "designConsistency": "100%",
+      "customHooks": "Implemented",
       "uptime": "99.9%"
     }
   }

@@ -1,86 +1,114 @@
 [
   {
-    "id": "ds-001",
-    "title": "Bengali Sentiment Analysis",
-    "subtitle": "Transformer-based NLP for low-resource Bengali",
-    "description": "Fine-tuned a multilingual BERT model on a custom-annotated Bengali social media corpus of 120,000 samples. Achieves 91.3% F1 score on sentiment classification, outperforming prior baselines by 8 points.",
-    "story": "Most NLP resources are English-centric. This project was about proving that a low-resource language could be handled with rigor and care.",
-    "tags": ["Python", "NLP", "Transformers", "BERT", "HuggingFace", "PyTorch", "Pandas"],
+    "id": "ds-skin-disease",
+    "title": "Automated Skin Disease Classification",
+    "subtitle": "Deep Ensemble Learning for Dermatology",
+    "description": "A high-precision framework using Balanced Transfer Learning and Deep Ensemble methods to classify five distinct skin conditions. Optimized across eleven deep learning architectures to ensure diagnostic accuracy in resource-limited settings.",
+    "story": "This research aimed to bridge the gap in dermatological healthcare accessibility. By leveraging a novel repository of 9,548 images, we achieved over 99% accuracy, making high-quality diagnosis possible via telemedicine.",
+    "tags": ["Python", "Deep Learning", "CNN", "Transfer Learning", "Ensemble Learning", "PyTorch", "Healthcare AI"],
     "type": "data-science",
     "status": "published",
-    "year": "2023",
-    "images": [
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200&auto=format"
-    ],
-    "links": {
-      "demo": null,
-      "github": "https://github.com/example/bengali-sentiment",
-      "paper": "https://arxiv.org/example/bengali-nlp"
-    },
-    "featured": true,
-    "size": "large",
-    "notebookType": "jupyter",
-    "codeSnippet": "from transformers import AutoTokenizer, AutoModelForSequenceClassification\nimport torch\n\n# Load fine-tuned Bengali BERT\nmodel_name = \"sagorsarker/bangla-bert-base\"\ntokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForSequenceClassification.from_pretrained(\n    \"./checkpoints/bengali-sentiment-v2\",\n    num_labels=3\n)\n\ndef predict_sentiment(text: str) -> dict:\n    inputs = tokenizer(\n        text, \n        return_tensors=\"pt\",\n        max_length=128,\n        truncation=True,\n        padding=\"max_length\"\n    )\n    with torch.no_grad():\n        outputs = model(**inputs)\n        probs = torch.softmax(outputs.logits, dim=-1)\n    \n    labels = [\"negative\", \"neutral\", \"positive\"]\n    return {labels[i]: round(p.item(), 4) for i, p in enumerate(probs[0])}\n\n# Example inference\nresult = predict_sentiment(\"আমি খুব খুশি আজকে!\")\nprint(result)  # {'negative': 0.03, 'neutral': 0.08, 'positive': 0.89}",
-    "metrics": {
-      "f1": "91.3%",
-      "accuracy": "92.1%",
-      "dataset": "120K samples"
-    }
-  },
-  {
-    "id": "ds-002",
-    "title": "Crop Yield Forecasting",
-    "subtitle": "Satellite imagery + ML for Bangladesh agriculture",
-    "description": "A multi-modal forecasting system combining Sentinel-2 satellite imagery with weather station data to predict rice yield at the upazila level. Deployed as an API for the Bangladesh Agriculture Ministry pilot.",
-    "story": "Over 40% of Bangladesh's workforce is in agriculture. A 10% improvement in yield prediction accuracy directly impacts food security planning for millions.",
-    "tags": ["Python", "Machine Learning", "CNN", "PyTorch", "Satellite Imagery", "GIS", "GeoPandas", "AWS"],
-    "type": "data-science",
-    "status": "deployed",
     "year": "2024",
     "images": [
-      "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1200&auto=format"
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&auto=format"
     ],
     "links": {
       "demo": null,
-      "github": "https://github.com/example/crop-yield-bd",
-      "paper": "https://arxiv.org/example/crop-yield"
+      "github": "https://github.com/mujahidraj/Skin-Diseases-Classification",
+      "paper": "#"
     },
     "featured": true,
     "size": "large",
     "notebookType": "jupyter",
-    "codeSnippet": "import numpy as np\nimport geopandas as gpd\nfrom sklearn.ensemble import GradientBoostingRegressor\nfrom sklearn.model_selection import cross_val_score\nimport rasterio\nfrom pathlib import Path\n\ndef extract_ndvi(sentinel_path: Path, band_red=4, band_nir=8) -> np.ndarray:\n    \"\"\"Extract NDVI from Sentinel-2 bands.\"\"\"\n    with rasterio.open(sentinel_path) as src:\n        red = src.read(band_red).astype(float)\n        nir = src.read(band_nir).astype(float)\n    \n    ndvi = (nir - red) / (nir + red + 1e-10)\n    return np.clip(ndvi, -1, 1)\n\n# Feature engineering pipeline\nfeatures = [\n    'ndvi_mean_june', 'ndvi_mean_july', 'ndvi_mean_august',\n    'rainfall_june_mm', 'rainfall_july_mm', 'temp_avg_c',\n    'soil_moisture_index', 'flood_days_count'\n]\n\nmodel = GradientBoostingRegressor(\n    n_estimators=300, learning_rate=0.05,\n    max_depth=4, subsample=0.8, random_state=42\n)\n\nscores = cross_val_score(model, X_train, y_train, cv=5, scoring='r2')\nprint(f\"CV R² Score: {scores.mean():.3f} ± {scores.std():.3f}\")",
+    "codeSnippet": "import torch.nn as nn\nfrom torchvision import models\n\ndef build_ensemble_model(num_classes=5):\n    # Using EfficientNetB0 as a base for the ensemble\n    base_model = models.efficientnet_b0(pretrained=True)\n    for param in base_model.parameters():\n        param.requires_grad = False\n        \n    # Custom head for skin lesion classification\n    base_model.classifier = nn.Sequential(\n        nn.Linear(1280, 512),\n        nn.ReLU(),\n        nn.Dropout(0.4),\n        nn.Linear(512, num_classes)\n    )\n    return base_model\n\n# Balanced training approach\ncriterion = nn.CrossEntropyLoss(weight=class_weights)\noptimizer = torch.optim.Adam(model.parameters(), lr=0.001)",
     "metrics": {
-      "r2": "0.847",
-      "rmse": "0.31 tons/ha",
-      "coverage": "64 upazilas"
+      "accuracy": "99.1%",
+      "dataset": "9,548 images",
+      "architectures": "11 Optimized Models"
     }
   },
   {
-    "id": "ds-003",
-    "title": "E-commerce Churn Predictor",
-    "subtitle": "Survival analysis for customer retention",
-    "description": "Applied Cox proportional hazards model and LightGBM ensemble to predict 30-day churn for a major Dhaka-based e-commerce platform. SHAP explanations surface actionable retention levers per customer segment.",
-    "story": "The client was losing 23% of monthly active users. After deployment, targeted interventions reduced churn by 31% in the first quarter.",
-    "tags": ["Python", "Machine Learning", "LightGBM", "SHAP", "Survival Analysis", "SQL", "Pandas", "Scikit-learn"],
+    "id": "ds-rent-analysis",
+    "title": "Dhaka Rent Analysis & Prediction",
+    "subtitle": "Data-driven Real Estate Insights",
+    "description": "A comprehensive data science project involving scraping, cleaning, and analyzing rental price trends across various zones in Dhaka. Features a predictive model to estimate fair market rent based on location, size, and amenities.",
+    "story": "Finding an affordable home in Dhaka shouldn't be guesswork. I built this tool to visualize price distribution and help tenants understand where they get the best value for their money.",
+    "tags": ["Python", "Web Scraping", "Regression", "Data Visualization", "Pandas", "Scikit-Learn", "Matplotlib"],
     "type": "data-science",
-    "status": "deployed",
-    "year": "2023",
+    "status": "completed",
+    "year": "2025",
     "images": [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format"
+      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1200&auto=format"
     ],
     "links": {
       "demo": null,
-      "github": "https://github.com/example/churn-predictor",
+      "github": "https://github.com/mujahidraj/Rent-Analysis-in-Dhaka",
+      "paper": null
+    },
+    "featured": true,
+    "size": "large",
+    "notebookType": "jupyter",
+    "codeSnippet": "import pandas as pd\nimport seaborn as sns\nfrom sklearn.ensemble import RandomForestRegressor\n\n# Analyze price per square foot across Dhaka zones\ndf['price_per_sqft'] = df['rent'] / df['area']\nzone_pivot = df.groupby('zone')['price_per_sqft'].median().sort_values()\n\n# Rent Prediction Model\nX = df[['area', 'bedrooms', 'bathrooms', 'encoded_zone']]\ny = df['rent']\n\nrf_model = RandomForestRegressor(n_estimators=100, random_state=42)\nrf_model.fit(X_train, y_train)\nprint(f\"R² Score: {rf_model.score(X_test, y_test):.2f}\")",
+    "metrics": {
+      "r2": "0.82",
+      "data_points": "5,000+ Listings",
+      "coverage": "All Major Dhaka Zones"
+    }
+  },
+  {
+    "id": "ds-emotion-recognition",
+    "title": "Facial Emotion Recognition",
+    "subtitle": "Computer Vision for Human Sentiment",
+    "description": "Developed a real-time emotion recognition system using deep convolutional neural networks. The model interprets facial expressions to categorize emotions like happiness, sadness, anger, and neutral states.",
+    "story": "How can machines understand human feelings? This notebook explores the intersection of Computer Vision and psychology to create more empathetic AI interfaces.",
+    "tags": ["Python", "Computer Vision", "OpenCV", "TensorFlow", "Keras", "Deep Learning"],
+    "type": "data-science",
+    "status": "stable",
+    "year": "2024",
+    "images": [
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/mujahidraj/Facial-Emotion-Recognition-Notebook",
       "paper": null
     },
     "featured": false,
     "size": "medium",
     "notebookType": "jupyter",
-    "codeSnippet": "import lightgbm as lgb\nimport shap\nimport pandas as pd\nfrom lifelines import CoxPHFitter\n\n# Survival analysis baseline\ncph = CoxPHFitter(penalizer=0.1)\ncph.fit(\n    df_survival,\n    duration_col='days_to_churn',\n    event_col='churned',\n    formula='recency + frequency + monetary + days_since_last_order'\n)\ncph.print_summary()\n\n# Gradient boosting classifier\nparams = {\n    'objective': 'binary',\n    'metric': 'auc',\n    'num_leaves': 63,\n    'learning_rate': 0.02,\n    'feature_fraction': 0.8,\n    'bagging_fraction': 0.8,\n    'min_child_samples': 20\n}\n\nbst = lgb.train(params, dtrain, num_boost_round=1000,\n                valid_sets=[dval], callbacks=[lgb.early_stopping(50)])\n\n# SHAP explanations\nexplainer = shap.TreeExplainer(bst)\nshap_values = explainer.shap_values(X_test)\nshap.summary_plot(shap_values, X_test, max_display=15)",
+    "codeSnippet": "import cv2\nfrom keras.models import load_model\n\n# Load pre-trained FER model\nmodel = load_model('emotion_model.h5')\nface_haar_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')\n\ndef detect_emotion(frame):\n    gray_img = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)\n    faces_detected = face_haar_cascade.detectMultiScale(gray_img, 1.32, 5)\n    \n    for (x, y, w, h) in faces_detected:\n        roi_gray = gray_img[y:y+w, x:x+h]\n        roi_gray = cv2.resize(roi_gray, (48, 48))\n        img_pixels = image.img_to_array(roi_gray)\n        # ... Normalize and Predict ...\n    return predictions",
     "metrics": {
-      "auc": "0.891",
-      "precision": "78.4%",
-      "lift": "3.2x"
+      "accuracy": "74.5%",
+      "fps": "30+ on CPU",
+      "categories": "7 Emotions"
+    }
+  },
+  {
+    "id": "ds-news-preprocessing",
+    "title": "News Scrapping & Pre-processing",
+    "subtitle": "Automated Pipeline for Bengali Media",
+    "description": "A robust data engineering pipeline built to scrape news articles from various online portals and apply advanced pre-processing techniques, including tokenization and noise reduction, for downstream NLP tasks.",
+    "story": "Data cleaning is 80% of the work in Data Science. I built this pipeline to automate the tedious parts of gathering a high-quality Bengali text corpus for TechWisdom's AI research.",
+    "tags": ["Python", "BeautifulSoup", "Selenium", "NLTK", "Regex", "Data Engineering"],
+    "type": "data-science",
+    "status": "completed",
+    "year": "2025",
+    "images": [
+      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/mujahidraj/News-scrapping-and-Pre-processing-",
+      "paper": null
+    },
+    "featured": false,
+    "size": "medium",
+    "notebookType": "jupyter",
+    "codeSnippet": "from bs4 import BeautifulSoup\nimport requests\n\ndef scrape_portal(url):\n    response = requests.get(url)\n    soup = BeautifulSoup(response.text, 'html.parser')\n    # Extracting headlines and article body\n    articles = []\n    for item in soup.find_all('article'):\n        headline = item.find('h2').text.strip()\n        content = item.find('div', class_='body').text.strip()\n        articles.append({'headline': headline, 'text': content})\n    return pd.DataFrame(articles)\n\n# Apply Bengali specific cleaning\ndef clean_bengali_text(text):\n    # Removing punctuation and special characters\n    return re.sub(r'[\\u0980-\\u09FF]+', '', text)",
+    "metrics": {
+      "sources": "5+ Portals",
+      "automation": "100%",
+      "output": "Clean JSON/CSV"
     }
   }
 ]

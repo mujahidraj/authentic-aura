@@ -5,52 +5,178 @@
     "author": "Robert C. Martin",
     "color": "#854d0e",
     "height": "h-64",
-    "review": "The handbook for craftsmanship. A must-read for leaving the campsite cleaner than you found it.",
+    "image": "https://m.media-amazon.com/images/I/41xShlnTZTL._SX376_BO1,204,203,200_.jpg",
+    "review": "The handbook for craftsmanship. It taught me that writing code is like writing a story—it should be elegant, readable, and easy to maintain for the next person who visits the campsite.",
     "rating": 5
   },
   {
     "id": "b2",
-    "title": "Pragmatic Programmer",
-    "author": "Andrew Hunt",
+    "title": "Habluder Jonno Programming",
+    "author": "Jhankar Mahbub",
     "color": "#1e3a8a",
     "height": "h-64",
-    "review": "Changed how I approach problems. 'Don't Repeat Yourself' is my mantra now.",
+    "image": "https://m.media-amazon.com/images/I/51r2K8A97VL.jpg",
+    "review": "The best entry point for any Bengali speaker into the world of logic. It breaks down complex computer science concepts into hilarious, relatable metaphors that stay with you forever.",
     "rating": 5
   },
   {
     "id": "b3",
-    "title": "Atomic Habits",
-    "author": "James Clear",
+    "title": "Programming-er Bolod to Bos",
+    "author": "Jhankar Mahbub",
     "color": "#991b1b",
     "height": "h-64",
-    "review": "Small improvements compound into massive changes. Applied this to my coding practice.",
-    "rating": 4
+    "image": "https://m.media-amazon.com/images/I/51M3m-K834L.jpg",
+    "review": "The sequel that bridges the gap between a beginner and a professional. It focuses on the mindset of a developer, teaching you how to solve problems like a 'Boss' rather than just typing code.",
+    "rating": 5
   },
   {
     "id": "b4",
-    "title": "Refactoring UI",
-    "author": "Adam Wathan",
+    "title": "Laws of UX",
+    "author": "Jon Yablonski",
     "color": "#581c87",
     "height": "h-64",
-    "review": "The bridge between developer and designer. Practical tactics over abstract theory.",
+    "image": "https://m.media-amazon.com/images/I/41S3nI6DqdL._SX331_BO1,204,203,200_.jpg",
+    "review": "A masterclass in psychology for designers. Understanding how users perceive and interact with digital interfaces is the secret sauce to building products that feel natural and intuitive.",
     "rating": 5
   },
   {
     "id": "b5",
-    "title": "Zero to One",
-    "author": "Peter Thiel",
+    "title": "Designing Interfaces",
+    "author": "Jenifer Tidwell",
     "color": "#14532d",
     "height": "h-64",
-    "review": "Vertical progress vs Horizontal progress. Essential for startup thinking.",
+    "image": "https://m.media-amazon.com/images/I/51H0f-vSACL._SX379_BO1,204,203,200_.jpg",
+    "review": "A comprehensive pattern library for UI. It provides a deep dive into successful interaction design strategies, helping me understand why certain layouts work while others fail.",
     "rating": 4
   },
   {
     "id": "b6",
-    "title": "Data Intensive Apps",
-    "author": "Martin Kleppmann",
+    "title": "100 Things Every Designer Needs to Know About People",
+    "author": "Susan M. Weinschenk",
     "color": "#9a3412",
     "height": "h-64",
-    "review": "The bible for backend engineering. Distributed systems demystified.",
+    "image": "https://m.media-amazon.com/images/I/41Y4A+C69vL._SX352_BO1,204,203,200_.jpg",
+    "review": "Designing without understanding psychology is just decoration. This book explains the way people think, see, and remember, which is crucial for creating effective user experiences.",
     "rating": 5
+  },
+  {
+    "id": "b7",
+    "title": "The Elements of User Experience",
+    "author": "Jesse James Garrett",
+    "color": "#0f172a",
+    "height": "h-64",
+    "image": "https://m.media-amazon.com/images/I/41p9D7E840L._SX396_BO1,204,203,200_.jpg",
+    "review": "The foundation of modern UX design. Garrett’s five planes—Strategy, Scope, Structure, Skeleton, and Surface—gave me a clear framework for building products from the ground up.",
+    "rating": 5
+  },
+  {
+    "id": "b8",
+    "title": "The Design of Everyday Things",
+    "author": "Don Norman",
+    "color": "#7c2d12",
+    "height": "h-64",
+    "image": "https://m.media-amazon.com/images/I/410ZJxyEquL._SX322_BO1,204,203,200_.jpg",
+    "review": "The ultimate book on cognitive engineering. It taught me that if a user can't figure out how to use a door or an app, it's the design's fault, not the user's. A life-changing perspective.",
+    "rating": 5
+  },
+  {
+    "id": "b9",
+    "title": "Refactoring UI",
+    "author": "Adam Wathan & Steve Schoger",
+    "color": "#312e81",
+    "height": "h-64",
+    "image": "https://refactoringui.nyc3.cdn.digitaloceanspaces.com/book-cover.png",
+    "review": "The practical guide that every developer needs. It moves away from abstract art and provides tactical, actionable advice to make any application look polished and professional.",
+    "rating": 5
+  },
+  {
+    "id": "b10",
+    "title": "The 48 Laws of Power",
+    "author": "Robert Greene",
+    "color": "#450a0a",
+    "height": "h-64",
+    "image": "https://m.media-amazon.com/images/I/41-6eXoBGdL._SX327_BO1,204,203,200_.jpg",
+    "review": "A brutal and brilliant study of human nature and social dynamics. While controversial, it provides indispensable insights into the power structures of the professional and social world.",
+    "rating": 4
+  },
+  {
+    "id": "b11",
+    "title": "Sherlock Holmes",
+    "author": "Sir Arthur Conan Doyle",
+    "color": "#1e293b",
+    "height": "h-64",
+    "image": "https://m.media-amazon.com/images/I/51-m67mH6+L._SX331_BO1,204,203,200_.jpg",
+    "review": "The pinnacle of deductive reasoning. Sherlock’s ability to see what others only observe is a skill I try to apply when debugging complex codebases or analyzing user data.",
+    "rating": 5
+  },
+  {
+    "id": "b12",
+    "title": "Feluda",
+    "author": "Satyajit Ray",
+    "color": "#78350f",
+    "height": "h-64",
+    "image": "https://m.media-amazon.com/images/I/51R8V9M-N6L.jpg",
+    "review": "The quintessential Bengali detective. Ray’s storytelling and Prodosh Chandra Mitter’s 'Magajastro' (brain-weapon) are a testament to the power of observation and sharp intellect.",
+    "rating": 5
+  },
+  {
+    "id": "b13",
+    "title": "Byomkesh Bakshi",
+    "author": "Sharadindu Bandyopadhyay",
+    "color": "#064e3b",
+    "height": "h-64",
+    "image": "https://m.media-amazon.com/images/I/51C+S5J-kML.jpg",
+    "review": "More than just a detective, he is a 'Satyanweshi' (seeker of truth). The intricate plots and historical context make these stories a masterclass in narrative logic and human psychology.",
+    "rating": 5
+  },
+  {
+    "id": "b14",
+    "title": "Kakababu",
+    "author": "Sunil Gangopadhyay",
+    "color": "#3f6212",
+    "height": "h-64",
+    "image": "https://m.media-amazon.com/images/I/51jG4h4n-kL.jpg",
+    "review": "Raja Roychowdhury’s adventures combine archaeology, history, and mystery. They taught me that curiosity and courage are the most important tools for any explorer or engineer.",
+    "rating": 4
+  },
+  {
+    "id": "b15",
+    "title": "Arjun Kumar",
+    "author": "Samaresh Majumdar",
+    "color": "#164e63",
+    "height": "h-64",
+    "image": "https://m.media-amazon.com/images/I/41S7W1D00NL.jpg",
+    "review": "A unique detective series featuring a young, agile seeker of truth. It’s a refreshing take on the genre that emphasizes movement, modern settings, and relentless pursuit.",
+    "rating": 4
+  },
+  {
+    "id": "b23",
+    "title": "Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "color": "#1e3a8a",
+    "height": "h-64",
+    "image": "https://m.media-amazon.com/images/I/41as+49FOKL._SX396_BO1,204,203,200_.jpg",
+    "review": "Changed how I approach problems. 'Don't Repeat Yourself' is my mantra now.",
+    "rating": 5
+  },
+  {
+    "id": "b33",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "color": "#991b1b",
+    "height": "h-64",
+    "image": "https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg",
+    "review": "Small improvements compound into massive changes. Applied this to my coding practice.",
+    "rating": 4
+  },
+  {
+    "id": "b53",
+    "title": "Zero to One",
+    "author": "Peter Thiel",
+    "color": "#14532d",
+    "height": "h-64",
+    "image": "https://m.media-amazon.com/images/I/41AfSJHscNL._SX322_BO1,204,203,200_.jpg",
+    "review": "Vertical progress vs Horizontal progress. Essential for startup thinking.",
+    "rating": 4
   }
 ]

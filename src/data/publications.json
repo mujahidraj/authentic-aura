@@ -1,68 +1,46 @@
 [
   {
-    "id": "pub-001",
-    "title": "BengaliSent: A Large-Scale Benchmark for Bengali Sentiment Analysis Using Multilingual Transformers",
-    "subtitle": "ACL Workshop on South and Southeast Asian NLP (2021)",
-    "description": "We introduce BengaliSent, a manually annotated corpus of 120,000 social media posts for three-class sentiment classification. We fine-tune multilingual BERT and XLM-RoBERTa and achieve state-of-the-art F1 of 91.3%, outperforming prior work by 8.2 points.",
-    "story": "This paper grew out of frustration at how little NLP tooling existed for Bengali speakers. What started as a side project became a published benchmark that other researchers continue to build on.",
-    "tags": ["NLP", "Bengali", "Transformers", "BERT", "Sentiment Analysis", "Deep Learning"],
+    "id": "pub-223",
+    "title": "A Lightweight Data Mining Approach for Fake Review Detection: An Integrated Textual and Behavioral Analysis",
+    "subtitle": "3rd International Conference on Big Data, IoT and Machine Learning (BIM 2025)",
+    "description": "This research presents a lightweight data mining methodology designed to detect fraudulent reviews by integrating both textual content analysis and user behavioral patterns[cite: 1, 8, 9]. Presented at the 3rd International Conference on Big Data, IoT and Machine Learning in Dhaka, Bangladesh.",
+    "story": "This project addressed the growing challenge of trust in digital marketplaces. By combining how a review is written with how a user behaves, we created a more robust detection system that doesn't require massive computational resources.",
+    "tags": ["Data Mining", "Fake Review Detection", "Behavioral Analysis", "Machine Learning", "BIM 2025"],
     "type": "publication",
-    "year": "2021",
-    "venue": "ACL Workshop on South and Southeast Asian NLP",
-    "authors": ["Author Name", "Dr. Colleague A", "Dr. Colleague B"],
+    "year": "2025",
+    "venue": "3rd International Conference on Big Data, IoT and Machine Learning (BIM 2025)",
+    "authors": ["Kazi Abdullah Jarif", "Mst. Nadiya Noor", "Moizuddin Mohammad Mujahid Rashid", "Victor Stany Rozario"],
     "images": [
-      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200&auto=format"
+      "https://vki-drupal.s3.eu-west-1.amazonaws.com/prod/s3fs-public/2023-10/VELvector-shutterstock_2004980657-2k.jpg?VersionId=xUrtNt2Uf9fwH_tvAKm1WWEOO7NQQe_B"
     ],
     "links": {
-      "paper": "https://arxiv.org/example/bengaliSent",
-      "github": "https://github.com/example/bengaliSent",
+      "paper": "#",
+      "github": null,
       "demo": null
-    },
-    "citations": 47,
-    "featured": true
-  },
-  {
-    "id": "pub-002",
-    "title": "Satellite-Assisted Crop Yield Prediction for Climate-Vulnerable Agricultural Systems",
-    "subtitle": "Nature Food (Under Review, 2024)",
-    "description": "A multi-modal approach combining Sentinel-2 NDVI time series with meteorological station data and farmer survey inputs to predict boro rice yield at the upazila level in Bangladesh. Model achieves R² of 0.847 on held-out test set.",
-    "story": "This research is the academic backbone of a project commissioned by the Bangladesh Ministry of Agriculture. The stakes — food security for 170 million people — clarified every methodological decision.",
-    "tags": ["Remote Sensing", "Machine Learning", "Agriculture", "Bangladesh", "CNN", "Food Security"],
-    "type": "publication",
-    "year": "2024",
-    "venue": "Nature Food (Under Review)",
-    "authors": ["Author Name", "Prof. Collaborator X", "BARI Research Team"],
-    "images": [
-      "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1200&auto=format"
-    ],
-    "links": {
-      "paper": "https://arxiv.org/example/crop-yield",
-      "github": "https://github.com/example/crop-yield-bd",
-      "demo": null
-    },
-    "citations": 3,
-    "featured": true
-  },
-  {
-    "id": "pub-003",
-    "title": "Building NLP for the Other 5 Billion: Lessons from Low-Resource Language Research in South Asia",
-    "subtitle": "PyCon APAC 2023 — Conference Talk",
-    "description": "A practitioner's account of the technical and ethical challenges of building NLP systems for languages with limited digital representation. Covers data collection strategies, model adaptation techniques, and community-centered evaluation methods.",
-    "story": "This talk crystallized years of work into a coherent argument: the next frontier in AI isn't more compute, it's linguistic diversity. The room's response convinced me this was a message worth repeating.",
-    "tags": ["NLP", "Low-Resource NLP", "AI Ethics", "Python", "Community"],
-    "type": "talk",
-    "year": "2023",
-    "venue": "PyCon Asia Pacific 2023, Singapore",
-    "authors": ["Author Name"],
-    "images": [
-      "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&auto=format"
-    ],
-    "links": {
-      "paper": null,
-      "github": "https://github.com/example/pycon-talk-slides",
-      "demo": "https://youtube.com/example/pycon-talk"
     },
     "citations": null,
-    "featured": false
+    "featured": true
+  },
+  {
+    "id": "pub-skin-detection",
+    "title": "Automated Skin Diseases Detection: Multi-Class Lesion Classification via Balanced Transfer Learning and Deep Ensemble Learning",
+    "subtitle": "American International University-Bangladesh (AIUB) Research",
+    "description": "A comprehensive framework that integrates balanced transfer learning with robust deep ensemble architectures to optimize multi-class classification performance for five distinct skin conditions, including rare ones like SJS-TEN and Vitiligo.",
+    "story": "Motivated by diagnostic delays and specialist shortages, this research curated a novel repository of 9,548 self-collected images to establish a high-precision, cost-effective automated classifier for resource-limited settings.",
+    "tags": ["Deep Learning", "Transfer Learning", "Dermatology", "Ensemble Learning", "Healthcare AI"],
+    "type": "publication",
+    "year": "2025",
+    "venue": "Department of Computer Science, AIUB",
+    "authors": ["Moizuddin Mohammad Mujahid Rashid", "Asmaul Husna Mayad", "Fidbi Hasan", "Ashfaq Ayub"],
+    "images": [
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&auto=format"
+    ],
+    "links": {
+      "paper": "#",
+      "github": null,
+      "demo": null
+    },
+    "citations": null,
+    "featured": true
   }
 ]

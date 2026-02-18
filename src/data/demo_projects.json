@@ -1,65 +1,128 @@
 [
   {
-    "id": "demo-001",
-    "title": "Morphic UI Playground",
-    "subtitle": "Experimental generative UI with LLM backends",
-    "description": "A sandbox for testing LLM-driven UI generation. You describe a component in natural language and watch it render in real-time. Built to explore the future of no-code development.",
-    "story": "What if your design system could understand English? This demo answers that question — imperfectly, but fascinatingly.",
-    "tags": ["React", "TypeScript", "OpenAI", "Tailwind CSS", "Framer Motion"],
-    "type": "demo",
-    "status": "prototype",
-    "year": "2024",
+    "id": "project-techwisdom",
+    "title": "TechWisdom Technologies",
+    "subtitle": "Official Agency Website",
+    "description": "The digital home for TechWisdom Technologies, a software agency co-founded to deliver high-end digital solutions. The site showcases the agency's mission, service offerings, and technological expertise.",
+    "story": "Building this site was about more than just code; it was about defining a brand identity and a professional standard for our agency's clients.",
+    "tags": ["React", "Node.js", "Agency", "Branding", "UI/UX"],
+    "type": "agency",
+    "status": "active",
+    "year": "2026",
     "images": [
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&auto=format"
+      "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&auto=format"
     ],
     "links": {
-      "demo": "https://morphic.demo.com",
-      "github": "https://github.com/example/morphic",
+      "demo": "https://techwisdom.tech",
+      "github": "https://github.com/mujahidraj/TechWisdom-Technologies",
       "paper": null
     },
-    "featured": false,
-    "size": "small"
+    "featured": true,
+    "size": "large"
   },
   {
-    "id": "demo-002",
-    "title": "Dhaka Traffic Oracle",
-    "subtitle": "Predicting traffic jams before they happen",
-    "description": "A real-time traffic prediction prototype for Dhaka city using historical patterns, weather data, and prayer time correlations. Achieves 74% accuracy on 30-minute predictions.",
-    "story": "Anyone who has lived in Dhaka knows the traffic is an organism of its own. This prototype tries to understand it.",
-    "tags": ["Python", "Machine Learning", "Time Series", "Leaflet.js", "FastAPI", "Redis"],
-    "type": "demo",
-    "status": "prototype",
-    "year": "2023",
+    "id": "project-cambry",
+    "title": "Cambry",
+    "subtitle": "Study Abroad Agency Platform",
+    "description": "A specialized platform designed for a study abroad agency to manage student applications, university partnerships, and consultation scheduling.",
+    "story": "This project required a deep focus on user trust and information architecture, ensuring students could navigate complex international education paths easily.",
+    "tags": ["React", "Management System", "Education", "Consultancy"],
+    "type": "agency-platform",
+    "status": "completed",
+    "year": "2026",
     "images": [
-      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1200&auto=format"
+      "https://www.cambrybd.com/assets/Cambry_Official_logo.webp"
     ],
     "links": {
-      "demo": "https://dhaka-oracle.demo.com",
-      "github": "https://github.com/example/dhaka-oracle",
-      "paper": null
-    },
-    "featured": false,
-    "size": "small"
-  },
-  {
-    "id": "demo-003",
-    "title": "Raga Visualizer",
-    "subtitle": "Synesthetic music visualization for classical ragas",
-    "description": "An audio-reactive visual system that maps South Asian classical ragas to color, shape, and motion. Each note triggers a particle system tuned to the emotional register of the raga.",
-    "story": "Music and data visualization share the same grammar. This demo is a meditation on that idea.",
-    "tags": ["React", "Three.js", "Web Audio API", "GLSL", "TypeScript"],
-    "type": "demo",
-    "status": "prototype",
-    "year": "2024",
-    "images": [
-      "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=1200&auto=format"
-    ],
-    "links": {
-      "demo": "https://raga-viz.demo.com",
-      "github": "https://github.com/example/raga-viz",
+      "demo": null,
+      "github": "https://github.com/mujahidraj/cambry-2",
       "paper": null
     },
     "featured": true,
     "size": "medium"
+  },
+  {
+    "id": "project-juta-express",
+    "title": "Juta Express",
+    "subtitle": "E-commerce for Footwear Imports",
+    "description": "A high-performance e-commerce platform specializing in quality shoes imported from China to the Bangladesh market. Includes real-time inventory and a local payment gateway.",
+    "story": "Juta Express streamlines cross-border commerce, solving the logistical and technical hurdles of bringing international products to a local audience.",
+    "tags": ["Next.js", "Prisma", "PostgreSQL", "E-commerce", "SSLCommerz"],
+    "type": "e-commerce",
+    "status": "production",
+    "year": "2025",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": "https://juta-express.com",
+      "github": "https://github.com/mujahidraj/Juta-Express",
+      "paper": null
+    },
+    "featured": false,
+    "size": "medium"
+  },
+  {
+    "id": "project-command-center",
+    "title": "Tech Command Center",
+    "subtitle": "Custom CMS for Scalable Content",
+    "description": "A tailored Content Management System (CMS) designed for high flexibility and performance, allowing for custom data structures and internal administration of agency assets.",
+    "story": "Off-the-shelf CMS solutions weren't enough for our workflow. I built this to give us complete control over our content strategy and deployment.",
+    "tags": ["TypeScript", "Custom CMS", "Database Architecture", "Utility"],
+    "type": "utility",
+    "status": "active",
+    "year": "2026",
+    "images": [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/mujahidraj/tech-command-center",
+      "paper": null
+    },
+    "featured": false,
+    "size": "small"
+  },
+  {
+    "id": "project-news-portal",
+    "title": "News Portal PH",
+    "subtitle": "Dynamic Multi-category News Engine",
+    "description": "A robust news portal optimized for high-traffic content delivery. It supports real-time updates, ad management, and mobile-responsive layouts for mass readers.",
+    "story": "Information speed is everything. This project helped me master high-frequency API polling and frontend state management.",
+    "tags": ["React", "Tailwind CSS", "News", "API Integration"],
+    "type": "web-app",
+    "status": "completed",
+    "year": "2025",
+    "images": [
+      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/mujahidraj/News-Portal-PH",
+      "paper": null
+    },
+    "featured": false,
+    "size": "small"
+  },
+  {
+    "id": "project-fitness-centre",
+    "title": "Fitness Centre PH",
+    "subtitle": "Gym & Health Management Platform",
+    "description": "A dedicated management system for fitness centers, enabling member tracking, class scheduling, and progress visualization for users.",
+    "story": "I wanted to combine technical utility with wellness, creating a dashboard that actually makes it easier for people to stay consistent with their health.",
+    "tags": ["React", "Express", "MongoDB", "Charts.js", "HealthTech"],
+    "type": "web-app",
+    "status": "stable",
+    "year": "2025",
+    "images": [
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/mujahidraj/Fitness-Centre-PH",
+      "paper": null
+    },
+    "featured": false,
+    "size": "small"
   }
 ]

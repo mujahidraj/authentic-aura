@@ -28,14 +28,12 @@ const TheLibrary = () => {
       <div className="relative w-full">
         
         {/* Books Wrapper: Centered + Scrollable */}
-        {/* 'pt-12' adds space at the top so the hover animation isn't cut off */}
         <div className="flex justify-center w-full overflow-x-auto pt-12 pb-4 scrollbar-hide">
             <div className="flex items-end gap-3 px-4">
             {booksData.map((book) => (
                 <div
                 key={book.id}
                 onClick={() => setSelectedBook(book)}
-                // FIX: Reduced width to 'w-9 md:w-11'
                 className={`
                     relative flex-shrink-0 w-9 md:w-11 ${heightClasses[book.height] || 'h-64'} 
                     cursor-pointer transition-transform duration-200 hover:-translate-y-4
@@ -49,13 +47,11 @@ const TheLibrary = () => {
 
                 {/* Spine Content */}
                 <div className="relative h-full flex flex-col items-center justify-between py-3">
-                    {/* Top Stripe */}
                     <div className="w-full px-1.5 opacity-60 flex flex-col gap-[2px]">
                         <div className="w-full h-[1px] bg-yellow-100/50" />
                         <div className="w-full h-[1px] bg-yellow-100/50" />
                     </div>
 
-                    {/* Vertical Title */}
                     <h4 
                     className="flex-1 font-display font-bold text-[9px] md:text-[10px] text-yellow-100/90 uppercase tracking-widest text-center py-4 truncate"
                     style={{ 
@@ -67,7 +63,6 @@ const TheLibrary = () => {
                     {book.title}
                     </h4>
 
-                    {/* Bottom Icon */}
                     <div className="opacity-80">
                         <Book size={10} className="text-yellow-100/70" />
                     </div>
@@ -77,8 +72,6 @@ const TheLibrary = () => {
             </div>
         </div>
 
-        {/* The Wooden Shelf Board */}
-        {/* Centered underneath the books */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-4 bg-[#2a2a2a] rounded-sm shadow-xl border-t border-white/10 z-0 w-[95%] max-w-4xl" />
       </div>
 
@@ -92,7 +85,6 @@ const TheLibrary = () => {
             className="bg-[#0f0f0f] border border-white/10 w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row relative"
             onClick={(e) => e.stopPropagation()}
           >
-             {/* Close Button */}
              <button 
                 onClick={() => setSelectedBook(null)}
                 className="absolute top-4 right-4 z-20 p-2 bg-black/40 rounded-full text-white hover:bg-white/10"
@@ -100,17 +92,28 @@ const TheLibrary = () => {
                 <X size={20} />
               </button>
 
-            {/* Left: Color Block */}
+            {/* Left: Color Block with Image */}
             <div 
-              className="w-full md:w-2/5 h-40 md:h-auto relative flex items-center justify-center"
+              className="w-full md:w-2/5 h-64 md:h-auto relative flex items-center justify-center overflow-hidden"
               style={{ backgroundColor: selectedBook.color }}
             >
-              <div className="relative z-10 p-6 border-4 border-white/20 rounded-lg shadow-xl">
+              {/* Added: Actual Book Image Rendering */}
+              {selectedBook.image ? (
+                <img 
+                  src={selectedBook.image} 
+                  alt={selectedBook.title} 
+                  className="w-full h-full object-cover opacity-90 transition-opacity hover:opacity-100"
+                />
+              ) : (
+                <div className="relative z-10 p-6 border-4 border-white/20 rounded-lg shadow-xl">
                   <Book size={48} className="text-white/90" />
-              </div>
+                </div>
+              )}
+              {/* Subtle Overlay Texture */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
             </div>
 
-            {/* Right: Content */}
+            {/* Right: Content (Kept exactly as is) */}
             <div className="w-full md:w-3/5 p-8 flex flex-col justify-between">
               <div>
                   <div className="mb-6 pr-8">

@@ -18,5 +18,55 @@
     "id": "faq-4",
     "question": "How do we handle communication during the project?",
     "answer": "I primarily use Slack or Discord for daily async updates, and scheduled Zoom/Google Meet calls for weekly syncs. You will also have access to a real-time dashboard to track progress."
+  },
+  {
+    "id": "faq-5",
+    "question": "Can you redesign my existing website?",
+    "answer": "Yes. I can perform a full UI/UX audit of your current site and rebuild it using modern technologies to improve performance, accessibility, and conversion rates."
+  },
+  {
+    "id": "faq-6",
+    "question": "Do you provide custom WordPress theme development?",
+    "answer": "I certainly do. Instead of using bloated pre-made themes, I build lightweight, custom-coded WordPress themes tailored specifically to your brand and performance requirements."
+  },
+  {
+    "id": "faq-7",
+    "question": "How do you handle Data Analysis projects?",
+    "answer": "I process raw data to find meaningful patterns. I use tools for statistical analysis and create interactive dashboards that help you visualize your business growth and user behavior."
+  },
+  {
+    "id": "faq-8",
+    "question": "Is your web development SEO-friendly?",
+    "answer": "Every site I build follows technical SEO best practices, including semantic HTML, fast loading speeds, mobile optimization, and proper meta-tag structures to help you rank better."
+  },
+  {
+    "id": "faq-9",
+    "question": "What kind of IT Support do you offer?",
+    "answer": "I provide remote and on-site technical assistance for Dhaka-based clients, covering hardware troubleshooting, software configuration, and system optimization to minimize downtime."
+  },
+  {
+    "id": "faq-10",
+    "question": "Will my website be mobile-responsive?",
+    "answer": "Definitely. I follow a mobile-first design approach, ensuring your digital experience looks and functions perfectly on smartphones, tablets, and desktops."
+  },
+  {
+    "id": "faq-11",
+    "question": "Do I own the source code and design files?",
+    "answer": "Yes, once the project is completed and the final payment is settled, you own 100% of the intellectual property, including the source code, design assets, and documentation."
+  },
+  {
+    "id": "faq-12",
+    "question": "Can you integrate third-party APIs or payment gateways?",
+    "answer": "I have extensive experience integrating various APIs, including payment processors like SSLCommerz, Stripe, and PayPal, as well as CRM and social media integrations."
+  },
+  {
+    "id": "faq-13",
+    "question": "How do you ensure the security of my application?",
+    "answer": "I implement industry-standard security protocols, including data encryption, secure authentication (JWT/OAuth), and protection against common threats like SQL injection and XSS."
+  },
+  {
+    "id": "faq-14",
+    "question": "Do you work with international clients?",
+    "answer": "Yes, I collaborate with clients worldwide. I am comfortable working across different time zones and maintain clear communication through digital collaboration tools."
   }
 ]

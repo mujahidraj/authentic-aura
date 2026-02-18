@@ -1,60 +1,84 @@
-[
+
+  [ 
   {
     "id": "edu-001",
-    "degree": "M.Sc. in Computer Science",
-    "major": "Machine Learning & AI",
-    "institution": "University of Dhaka",
+    "degree": "Secondary School Certificate (SSC)",
+    "major": "Science",
+    "institution": "Cambrian School and College",
     "location": "Dhaka, Bangladesh",
-    "coordinates": { "lat": 23.7279, "lng": 90.3984 },
-    "period": "2019 – 2021",
-    "startDate": "2019-09",
-    "endDate": "2021-06",
-    "gpa": "3.92 / 4.00",
-    "description": "Thesis on transformer-based models for low-resource South Asian language understanding. Coursework included Advanced Deep Learning, Probabilistic Graphical Models, and Computational Linguistics.",
+    "coordinates": { "lat": 23.7260, "lng": 90.3948 },
+    "period": "2017 – 2018",
+    "startDate": "2017-01",
+    "endDate": "2018-05",
+    "gpa": "5.00 / 5.00",
+    "description": "Completed Secondary School education with a focus on Science. Excelled in Physics, Chemistry, and Mathematics, laying a strong foundation for engineering studies. Actively participated in science fairs and math competitions, winning several awards at the district level.",
     "achievements": [
-      "Dean's List all four semesters",
-      "Best Thesis Award — Department of CSE",
-      "Published thesis work in ACL Workshop 2021",
-      "Graduate Research Fellowship recipient"
+      "Secured 10th place in the Dhaka District Science Fair (2017)",
+      "Received the 'Best Student' award for outstanding academic performance",
+      "Won 2nd place in the inter-school Football competition (2018)"
     ],
-    "tags": ["Machine Learning", "NLP", "Deep Learning", "Research", "Python"]
+    "tags": ["Science", "Mathematics", "Physics", "Chemistry"]
   },
+  {
+    "id": "edu-002",
+    "degree": "Higher Secondary Certificate (HSC)",
+    "major": "Science",
+    "institution": "Cambrian School and College",
+    "location": "Dhaka, Bangladesh",
+    "coordinates": { "lat": 23.7260, "lng": 90.3948 },
+    "period": "2018 – 2020",
+    "startDate": "2018-01",
+    "endDate": "2020-05",
+    "gpa": "5.00 / 5.00",
+    "description": "Completed Higher Secondary education with a focus on Science. Excelled in Physics, Chemistry, and Mathematics, laying a strong foundation for engineering studies. Actively participated in science fairs and math competitions, winning several awards at the district level.",
+    "achievements": [
+      "Secured 10th place in the Dhaka District Science Fair (2019)",
+      "Received the 'Best Student' award for outstanding academic performance",
+      "Won 1st place in the inter-school Football competition (2020)"
+    ],
+    "tags": ["Science", "Mathematics", "Physics", "Chemistry"]
+  },
+  {
+    "id": "edu-003",
+    "degree": "Program Certificate in Web Development",
+    "major": "Full Stack Web Development",
+    "institution": "Programming Hero",
+    "location": "Online",
+    "coordinates": { "lat": 37.4220, "lng": -122.0841 },
+    "period": "2024",
+    "startDate": "2024-01",
+    "endDate": "2024-08",
+    "gpa": null,
+    "description": "Intensive 8-month program covering HTML, CSS, JavaScript, React, Node.js, and database management. Completed multiple projects including a social media app and an e-commerce site.",
+    "achievements": [
+      "Completed 500+ coding challenges on HackerRank",
+      "Built and deployed 5 full-stack projects on GitHub",
+      "Received 'Best Project' award for e-commerce site",
+      "Contributed to open-source projects with 100+ stars"
+    ],
+    "tags": ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"]
+  },
+
   {
     "id": "edu-002",
     "degree": "B.Sc. in Computer Science & Engineering",
     "major": "Software Engineering",
-    "institution": "Bangladesh University of Engineering and Technology (BUET)",
+    "institution": "American International University-Bangladesh (AIUB)",
     "location": "Dhaka, Bangladesh",
     "coordinates": { "lat": 23.7260, "lng": 90.3948 },
-    "period": "2014 – 2019",
-    "startDate": "2014-01",
-    "endDate": "2019-06",
-    "gpa": "3.85 / 4.00",
+    "period": "2022 ",
+    "startDate": "2022-01",
+    "endDate": "2025-10",
+    "gpa": "3.65 / 4.00",
     "description": "Rigorous engineering curriculum with strong emphasis on algorithms, systems design, and applied mathematics. Final year project on distributed systems for rural connectivity.",
     "achievements": [
-      "Top 5% of graduating class",
-      "Led University ACM ICPC team to national semi-finals",
-      "Built university's first open-source student portal (3K+ users)",
-      "Teaching Assistant for Data Structures & Algorithms"
+      "Graduated with First Class Honors",
+      "AIUB Merit Scholarship recipient for 6 semesters",
+        "Final year project published in IEEE Access 2025",
+        "Published 2 research papers in national conferences",
+        
+      "Built university's first open-source student portal (1k+ users)"
     ],
     "tags": ["Algorithms", "Systems", "Software Engineering", "C++", "Java", "Mathematics"]
-  },
-  {
-    "id": "edu-003",
-    "degree": "Google Data Analytics Certificate",
-    "major": "Data Analytics",
-    "institution": "Google / Coursera",
-    "location": "Online",
-    "coordinates": { "lat": 37.4220, "lng": -122.0841 },
-    "period": "2022",
-    "startDate": "2022-01",
-    "endDate": "2022-04",
-    "gpa": null,
-    "description": "Completed the full 8-course Google Data Analytics Professional Certificate, covering data cleaning, analysis, visualization, and R programming.",
-    "achievements": [
-      "Completed 8 courses with distinction",
-      "Capstone project: Dhaka Air Quality Analysis"
-    ],
-    "tags": ["R", "SQL", "Tableau", "Data Analysis", "Statistics"]
-  }
+  } 
 ]

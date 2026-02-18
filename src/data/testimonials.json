@@ -1,26 +1,42 @@
 [
   {
     "id": "t1",
-    "name": "Sarah Jenkins",
-    "role": "CTO",
-    "company": "TechFlow",
-    "text": "Mujahid didn't just write code; he architected a solution that scaled our backend by 300%.",
+    "name": "Fidbi Hasan",
+    "role": "Lead Developer",
+    "company": "TechWisdom Technologies",
+    "text": "Working with Mujahid at TechWisdom has been incredible. His ability to architect the TechWisdom ERP while balancing startup growth as a co-founder is truly impressive.",
     "audio": "https://actions.google.com/sounds/v1/science_fiction/scifi_industrial_alarm.ogg" 
   },
   {
     "id": "t2",
-    "name": "David Ross",
-    "role": "Founder",
-    "company": "StartUp Inc",
-    "text": "I was skeptical about the timeline, but he delivered two days early. The animations are buttery smooth.",
+    "name": "Asmaul Husna Mayad",
+    "role": "Research Collaborator",
+    "company": "AIUB",
+    "text": "Mujahid's technical contribution to our skin disease classification research was pivotal. He has a unique talent for applying deep ensemble learning to real-world healthcare challenges.",
     "audio": "https://actions.google.com/sounds/v1/science_fiction/robot_movement_sequence.ogg"
   },
   {
     "id": "t3",
-    "name": "Elena Rodriguez",
-    "role": "Product Manager",
-    "company": "Creative Labs",
-    "text": "The 3D globe visualization he built is the highlight of our new landing page. Absolutely stunning work.",
+    "name": "Nusrat Ferdaws",
+    "role": "Software Engineer",
+    "company": "TechWisdom Team",
+    "text": "The attention to detail Mujahid puts into UI/UX design and SEO optimization is top-tier. He consistently delivers high-performance web applications that exceed client expectations.",
     "audio": "https://actions.google.com/sounds/v1/science_fiction/scifi_drone_taking_off.ogg"
+  },
+  {
+    "id": "t4",
+    "name": "Imtiaz Audhi",
+    "role": "Project Manager",
+    "company": "TechWisdom Technologies",
+    "text": "Mujahid is a rare talent who understands both the business logic and the technical depth required for enterprise solutions. He makes complex project management look easy.",
+    "audio": "https://actions.google.com/sounds/v1/science_fiction/automated_space_door.ogg"
+  },
+  {
+    "id": "t5",
+    "name": "Keka Afroze",
+    "role": "UI/UX Designer",
+    "company": "Creative Partner",
+    "text": "Collaborating with Mujahid on the TechWisdom website was a seamless experience. His transition from design prototypes to functional React components is flawless.",
+    "audio": "https://actions.google.com/sounds/v1/science_fiction/futuristic_device_power_up.ogg"
   }
 ]

@@ -1,30 +1,37 @@
 [
   {
     "id": "s1",
-    "title": "Full-Stack Development",
-    "description": "Building robust, scalable web applications from scratch using modern technologies like React, Node.js, and PostgreSQL.",
+    "title": "Web Development",
+    "description": "Building responsive, high-performance websites and web applications using modern frameworks and best practices to ensure a seamless user experience.",
     "icon": "Code",
-    "tags": ["Web App", "API", "Database"]
+    "tags": ["Frontend", "Backend", "Full Stack"]
   },
   {
     "id": "s2",
-    "title": "UI/UX Design & Prototyping",
-    "description": "Crafting intuitive and visually appealing user interfaces. Transforming complex ideas into interactive prototypes.",
+    "title": "UI/UX Design",
+    "description": "Crafting intuitive and visually stunning user interfaces. I focus on user-centered design principles to turn complex ideas into functional digital experiences.",
     "icon": "PenTool",
-    "tags": ["Figma", "Wireframing", "User Research"]
+    "tags": ["Figma", "Wireframing", "Prototyping"]
   },
   {
     "id": "s3",
-    "title": "Cloud Architecture & DevOps",
-    "description": "Designing secure and scalable cloud infrastructure on AWS. implementing CI/CD pipelines for automated deployment.",
-    "icon": "Cloud",
-    "tags": ["AWS", "Docker", "CI/CD"]
+    "title": "Data Analysis",
+    "description": "Transforming raw data into actionable insights. I use statistical tools and visualization techniques to help drive informed, data-driven decisions.",
+    "icon": "BarChart3",
+    "tags": ["Statistics", "Visualization", "Insights"]
   },
   {
     "id": "s4",
-    "title": "Technical Consultation",
-    "description": "Providing expert advice on technology stack selection, system architecture, and best practices for software development.",
-    "icon": "MessageSquare",
-    "tags": ["Strategy", "Architecture", "Mentorship"]
+    "title": "IT Support",
+    "description": "Providing comprehensive technical assistance, from hardware troubleshooting to software configuration, ensuring your systems run smoothly and efficiently.",
+    "icon": "Settings",
+    "tags": ["Troubleshooting", "Hardware", "Software"]
+  },
+  {
+    "id": "s5",
+    "title": "WordPress Development",
+    "description": "Designing and developing custom WordPress sites, including theme customization and plugin integration, tailored to your specific business needs.",
+    "icon": "Globe",
+    "tags": ["CMS", "Custom Themes", "Plugins"]
   }
 ]

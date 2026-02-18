@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { motion } from 'framer-motion';
-import { Code, PenTool, Cloud, MessageSquare, ArrowRight } from 'lucide-react'; // Import icons
+import { Code, PenTool, Cloud, MessageSquare,BarChart3, ArrowRight, Settings, Globe } from 'lucide-react'; // Import icons
 import servicesData from '../data/services.json';
 import { SectionWrapper } from './SectionWrapper';
 
@@ -9,7 +9,10 @@ const iconMap: any = {
   Code,
   PenTool,
   Cloud,
-  MessageSquare
+  MessageSquare,
+  BarChart3,
+  Settings,
+  Globe
 };
 
 const ServicesSection = () => {

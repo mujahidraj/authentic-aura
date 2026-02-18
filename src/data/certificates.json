@@ -1,38 +1,74 @@
 [
   {
     "id": "c1",
-    "title": "AWS Certified Solutions Architect",
-    "issuer": "Amazon Web Services",
-    "date": "Jan 2025",
-    "credentialId": "AWS-1234-5678",
-    "link": "https://aws.amazon.com/verification",
-    "tags": ["Cloud", "Architecture"]
+    "title": "Basic Digital Marketing",
+    "issuer": "Ostad",
+    "date": "Feb 2025",
+    "credentialId": "OSTAD-DM-2025",
+    "link": "https://mujahidraj.github.io/Personal-Site/certificate/images/Basic%20digital%20marketing.png",
+    "tags": ["Marketing", "Digital"]
   },
   {
     "id": "c2",
-    "title": "Meta Front-End Developer Professional",
-    "issuer": "Meta / Coursera",
-    "date": "Dec 2024",
-    "credentialId": "COURSERA-890",
-    "link": "#",
-    "tags": ["React", "UX/UI"]
+    "title": "Web Development Fundamentals",
+    "issuer": "IBM SkillsBuild",
+    "date": "Mar 2025",
+    "credentialId": "IBM-WD-772",
+    "link": "https://mujahidraj.github.io/Personal-Site/certificate/images/web%20dev%20fun.png",
+    "tags": ["Web Dev", "Basics"]
   },
   {
     "id": "c3",
-    "title": "Google Data Analytics Professional",
-    "issuer": "Google",
-    "date": "Nov 2024",
-    "credentialId": "GOOGLE-DA-555",
-    "link": "#",
-    "tags": ["Data Science", "R"]
+    "title": "IT Essentials: PC Hardware and Software",
+    "issuer": "Cisco Networking Academy",
+    "date": "Jun 2022",
+    "credentialId": "CISCO-ITE-2022",
+    "link": "https://mujahidraj.github.io/Personal-Site/certificate/images/IT%20Essentials.png",
+    "tags": ["Hardware", "Software"]
   },
   {
     "id": "c4",
-    "title": "Advanced React Patterns",
-    "issuer": "Frontend Masters",
-    "date": "Oct 2024",
-    "credentialId": "FM-REACT-adv",
-    "link": "#",
-    "tags": ["React", "Performance"]
+    "title": "Project Management Fundamentals",
+    "issuer": "IBM SkillsBuild",
+    "date": "Mar 2025",
+    "credentialId": "IBM-PM-991",
+    "link": "https://mujahidraj.github.io/Personal-Site/certificate/images/PMF.png",
+    "tags": ["Project Management", "Process"]
+  },
+  {
+    "id": "c5",
+    "title": "User Experience Fundamentals",
+    "issuer": "IBM SkillsBuild",
+    "date": "Apr 2025",
+    "credentialId": "IBM-UX-404",
+    "link": "https://mujahidraj.github.io/Personal-Site/certificate/images/UX.png",
+    "tags": ["UI/UX", "Design"]
+  },
+  {
+    "id": "c6",
+    "title": "JavaScript Workshop for Absolute Beginners",
+    "issuer": "Ostad",
+    "date": "Feb 2025",
+    "credentialId": "OSTAD-JS-2025",
+    "link": "https://mujahidraj.github.io/Personal-Site/certificate/images/Javascript.png",
+    "tags": ["JavaScript", "Frontend"]
+  },
+  {
+    "id": "c7",
+    "title": "Getting started with Microsoft PowerPoint",
+    "issuer": "Coursera",
+    "date": "Feb 2025",
+    "credentialId": "COURSERA-PPT-101",
+    "link": "https://mujahidraj.github.io/Personal-Site/certificate/images/Powerpoint.png",
+    "tags": ["PowerPoint", "Presentation"]
+  },
+  {
+    "id": "c8",
+    "title": "Getting started with Microsoft Excel",
+    "issuer": "Coursera",
+    "date": "Feb 2025",
+    "credentialId": "COURSERA-EXCEL-101",
+    "link": "https://mujahidraj.github.io/Personal-Site/certificate/images/excel.png",
+    "tags": ["Excel", "Data"]
   }
 ]
