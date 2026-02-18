@@ -8,101 +8,143 @@ import { ContactPanel } from '../components/ContactPanel';
 import { CustomCursor } from '../components/CustomCursor';
 import { SectionWrapper } from '../components/SectionWrapper';
 import { MagneticButton } from '../components/MagneticButton';
+import { NavBar } from '../components/NavBar';
+import { PricingSection } from '../components/PricingSection';
+import { PublicationsSection } from '../components/PublicationsSection';
 import { usePortfolioData } from '../hooks/usePortfolioData';
 
 const Index = () => {
   const [contactOpen, setContactOpen] = useState(false);
   const workRef = useRef<HTMLDivElement>(null);
-  const { allPortfolioItems, allTags, timeline, pricing } = usePortfolioData();
+  const { allPortfolioItems, allTags, timeline, pricing, publications } = usePortfolioData();
 
   const scrollToWork = () => {
     workRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const divider = (
+    <div
+      aria-hidden
+      className="w-full"
+      style={{ height: '1px', background: 'linear-gradient(to right, transparent, hsl(var(--border)), transparent)' }}
+    />
+  );
+
   return (
     <div className="relative min-h-screen bg-background text-foreground">
       <CustomCursor />
+      <NavBar onContactOpen={() => setContactOpen(true)} />
 
-      {/* Hero */}
+      {/* ── Hero ── */}
       <GlobeHero onScrollToWork={scrollToWork} />
 
-      {/* Works Grid */}
+      {/* ── Works Grid ── */}
       <div ref={workRef} id="work">
-        <SectionWrapper className="px-6 md:px-12 lg:px-20 py-24">
+        {divider}
+        <SectionWrapper className="px-6 md:px-12 lg:px-20 py-24 md:py-32">
           <BentoGrid items={allPortfolioItems} allTags={allTags} />
         </SectionWrapper>
       </div>
 
-      {/* Life Timeline */}
-      <div style={{ borderTop: '1px solid hsl(var(--border))' }}>
-        <SectionWrapper id="journey" className="px-6 md:px-12 lg:px-20 py-24">
+      {/* ── Publications ── */}
+      <div id="research">
+        {divider}
+        <SectionWrapper className="px-6 md:px-12 lg:px-20 py-24 md:py-32">
+          <PublicationsSection publications={publications} />
+        </SectionWrapper>
+      </div>
+
+      {/* ── Life Timeline ── */}
+      <div id="journey">
+        {divider}
+        <SectionWrapper className="px-6 md:px-12 lg:px-20 py-24 md:py-32">
           <LifeTimeline items={timeline} />
         </SectionWrapper>
       </div>
 
-      {/* Footer */}
-      <footer
-        className="px-6 md:px-12 lg:px-20 py-16"
-        style={{ borderTop: '1px solid hsl(var(--border))' }}
-      >
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      {/* ── Pricing ── */}
+      <div id="pricing">
+        {divider}
+        <SectionWrapper className="px-6 md:px-12 lg:px-20 py-24 md:py-32">
+          <PricingSection pricing={pricing} onContact={() => setContactOpen(true)} />
+        </SectionWrapper>
+      </div>
+
+      {/* ── Footer ── */}
+      {divider}
+      <footer className="px-6 md:px-12 lg:px-20 py-16">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
-            <p className="font-display text-2xl font-bold text-foreground mb-1">Your Name</p>
+            <p className="font-display text-3xl font-bold text-foreground mb-1">
+              Your Name<span style={{ color: 'hsl(var(--primary))' }}>.</span>
+            </p>
             <p className="font-mono text-xs text-muted-foreground">
               Dhaka, Bangladesh · Available for select projects
             </p>
           </div>
-          <nav className="flex items-center gap-8">
-            {['Work', 'Journey', 'Contact'].map(label => (
+
+          <nav className="flex flex-wrap items-center gap-6 md:gap-10">
+            {[
+              { label: 'Work', href: '#work' },
+              { label: 'Research', href: '#research' },
+              { label: 'Journey', href: '#journey' },
+              { label: 'Pricing', href: '#pricing' },
+            ].map(l => (
               <a
-                key={label}
-                href={`#${label.toLowerCase()}`}
-                className="font-mono text-xs text-muted-foreground hover:text-foreground transition-colors duration-200"
+                key={l.href}
+                href={l.href}
+                className="font-mono text-xs text-muted-foreground hover:text-foreground transition-colors duration-200 uppercase tracking-widest"
               >
-                {label}
+                {l.label}
               </a>
             ))}
           </nav>
-          <p className="font-mono text-xs text-muted-foreground">
-            © {new Date().getFullYear()} — Built with intention.
-          </p>
+
+          <div className="flex flex-col items-start md:items-end gap-2">
+            <MagneticButton>
+              <button
+                onClick={() => setContactOpen(true)}
+                className="flex items-center gap-2 font-mono text-xs px-5 py-2.5 rounded-full glow-primary"
+                style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))' }}
+              >
+                <MessageCircle size={12} />
+                Let's Work Together
+              </button>
+            </MagneticButton>
+            <p className="font-mono text-xs text-muted-foreground">
+              © {new Date().getFullYear()} — Built with intention.
+            </p>
+          </div>
         </div>
       </footer>
 
-      {/* Floating Action Buttons */}
+      {/* ── Floating Actions ── */}
       <div className="fixed bottom-8 right-8 z-[300] flex flex-col gap-3 items-end">
         <AnimatePresence>
           {!contactOpen && (
             <motion.div
-              initial={{ opacity: 0, y: 10 }}
+              initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 10 }}
+              exit={{ opacity: 0, y: 12 }}
               className="flex flex-col gap-3 items-end"
             >
               <MagneticButton>
                 <button
                   onClick={() => setContactOpen(true)}
                   className="flex items-center gap-2 px-5 py-3 rounded-full font-mono text-sm font-medium shadow-2xl glow-primary"
-                  style={{
-                    background: 'hsl(var(--primary))',
-                    color: 'hsl(var(--primary-foreground))',
-                  }}
+                  style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))' }}
                 >
-                  <MessageCircle size={16} />
+                  <MessageCircle size={15} />
                   Let's Talk
                 </button>
               </MagneticButton>
 
               <MagneticButton>
                 <button
-                  onClick={() => alert('PDF generation will be wired up with @react-pdf/renderer')}
                   className="flex items-center gap-2 px-5 py-3 rounded-full font-mono text-sm font-medium glass border transition-all duration-200"
-                  style={{
-                    color: 'hsl(var(--foreground))',
-                    borderColor: 'hsl(var(--border))',
-                  }}
+                  style={{ color: 'hsl(var(--foreground))', borderColor: 'hsl(var(--border))' }}
                 >
-                  <Download size={16} />
+                  <Download size={15} />
                   Download CV
                 </button>
               </MagneticButton>
@@ -111,7 +153,7 @@ const Index = () => {
         </AnimatePresence>
       </div>
 
-      {/* Contact Panel */}
+      {/* ── Contact Panel ── */}
       <ContactPanel
         isOpen={contactOpen}
         onClose={() => setContactOpen(false)}
