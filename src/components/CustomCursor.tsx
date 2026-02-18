@@ -1,8 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { motion } from 'framer-motion';
 
-type CursorType = 'default' | 'ds' | 'publication' | 'link' | 'drag';
+type CursorType = 'default' | 'ds' | 'publication' | 'link';
 
 export function CustomCursor() {
   const cursorRef = useRef<HTMLDivElement>(null);
@@ -18,7 +17,6 @@ export function CustomCursor() {
       pos.current = { x: e.clientX, y: e.clientY };
       setIsVisible(true);
 
-      // Detect element under cursor
       const el = e.target as HTMLElement;
       if (el.closest('[data-cursor="ds"]')) setCursorType('ds');
       else if (el.closest('[data-cursor="publication"]')) setCursorType('publication');
@@ -27,13 +25,12 @@ export function CustomCursor() {
     };
 
     const animate = () => {
-      // Smooth follower
       dotPos.current.x += (pos.current.x - dotPos.current.x) * 0.12;
       dotPos.current.y += (pos.current.y - dotPos.current.y) * 0.12;
 
       if (cursorRef.current) {
         cursorRef.current.style.transform =
-          `translate(${dotPos.current.x - 20}px, ${dotPos.current.y - 20}px)`;
+          `translate(${dotPos.current.x - 24}px, ${dotPos.current.y - 24}px)`;
       }
       if (dotRef.current) {
         dotRef.current.style.transform =
@@ -52,46 +49,48 @@ export function CustomCursor() {
     };
   }, []);
 
-  const getCursorContent = () => {
-    switch (cursorType) {
-      case 'ds': return '{}';
-      case 'publication': return '◉';
-      case 'link': return '↗';
-      default: return null;
-    }
+  // Cursor ring color and content per type
+  const ringColor =
+    cursorType === 'ds' ? 'hsl(var(--accent))' :
+    cursorType === 'publication' ? 'hsl(var(--primary))' :
+    cursorType === 'link' ? 'hsl(var(--foreground))' :
+    'hsl(var(--muted-foreground) / 0.5)';
+
+  const dotColor =
+    cursorType === 'ds' ? 'hsl(var(--accent))' :
+    cursorType === 'publication' ? 'hsl(var(--primary))' :
+    'hsl(var(--foreground))';
+
+  const ringSize = cursorType !== 'default' ? 52 : 44;
+
+  const CursorIcon = () => {
+    if (cursorType === 'ds') return <span className="font-mono font-bold text-[11px]" style={{ color: 'hsl(var(--accent))' }}>{'{}'}</span>;
+    if (cursorType === 'publication') return (
+      // Eye icon SVG
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="hsl(var(--primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+        <circle cx="12" cy="12" r="3" />
+      </svg>
+    );
+    if (cursorType === 'link') return <span className="font-mono text-sm font-bold" style={{ color: 'hsl(var(--foreground))' }}>↗</span>;
+    return null;
   };
 
   return (
     <>
-      {/* Outer ring / follower */}
+      {/* Outer ring */}
       <div
         ref={cursorRef}
-        className="fixed top-0 left-0 pointer-events-none z-[9999] w-10 h-10 rounded-full flex items-center justify-center will-change-transform"
+        className="fixed top-0 left-0 pointer-events-none z-[9999] rounded-full flex items-center justify-center will-change-transform"
         style={{
-          border: cursorType === 'ds'
-            ? '1.5px solid hsl(var(--accent))'
-            : cursorType === 'publication'
-            ? '1.5px solid hsl(var(--primary))'
-            : cursorType === 'link'
-            ? '1.5px solid hsl(var(--foreground))'
-            : '1.5px solid hsl(var(--muted-foreground) / 0.5)',
+          width: `${ringSize}px`,
+          height: `${ringSize}px`,
+          border: `1.5px solid ${ringColor}`,
           opacity: isVisible ? 1 : 0,
-          transition: 'border-color 0.3s ease, width 0.3s ease, height 0.3s ease',
-          width: cursorType !== 'default' ? '48px' : '40px',
-          height: cursorType !== 'default' ? '48px' : '40px',
+          transition: 'border-color 0.25s ease, width 0.25s ease, height 0.25s ease',
         }}
       >
-        {getCursorContent() && (
-          <span
-            className="text-xs font-mono font-bold leading-none select-none"
-            style={{
-              color: cursorType === 'ds' ? 'hsl(var(--accent))' : 'hsl(var(--primary))',
-              fontSize: cursorType === 'link' ? '14px' : '11px',
-            }}
-          >
-            {getCursorContent()}
-          </span>
-        )}
+        <CursorIcon />
       </div>
 
       {/* Inner dot */}
@@ -99,13 +98,9 @@ export function CustomCursor() {
         ref={dotRef}
         className="fixed top-0 left-0 pointer-events-none z-[9999] w-2 h-2 rounded-full will-change-transform"
         style={{
-          background: cursorType === 'ds'
-            ? 'hsl(var(--accent))'
-            : cursorType === 'publication'
-            ? 'hsl(var(--primary))'
-            : 'hsl(var(--foreground))',
+          background: dotColor,
           opacity: isVisible ? 0.9 : 0,
-          transition: 'background 0.3s ease',
+          transition: 'background 0.25s ease',
         }}
       />
     </>
