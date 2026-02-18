@@ -1,0 +1,89 @@
+[
+  {
+    "id": "proj-001",
+    "title": "NeuralViz Dashboard",
+    "subtitle": "Real-time ML model monitoring platform",
+    "description": "A comprehensive dashboard for monitoring machine learning models in production. Features real-time performance metrics, drift detection, and automated alerting systems built with a modern React frontend.",
+    "story": "This project emerged from a recurring pain point — teams deploying ML models had no unified way to observe model degradation in production. I spent three months building what I wished existed: a tool that speaks the language of both data scientists and DevOps engineers.",
+    "tags": ["React", "Python", "FastAPI", "PostgreSQL", "Redis", "Docker", "Kubernetes", "Prometheus"],
+    "type": "project",
+    "status": "completed",
+    "year": "2024",
+    "images": [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&auto=format",
+      "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": "https://neuralviz.demo.com",
+      "github": "https://github.com/example/neuralviz",
+      "paper": null
+    },
+    "featured": true,
+    "size": "large"
+  },
+  {
+    "id": "proj-002",
+    "title": "Khela — Sports Analytics",
+    "subtitle": "Bangladesh cricket performance intelligence",
+    "description": "End-to-end sports analytics platform aggregating Bangladesh cricket data. Provides per-player heatmaps, match outcome predictions, and interactive tournament brackets with ML-driven insights.",
+    "story": "Growing up watching cricket in Dhaka, I always felt the statistics presented in broadcasts were surface-level. Khela was my attempt to build the analytics engine I wished existed for Bangladesh cricket.",
+    "tags": ["React", "Python", "Pandas", "Scikit-learn", "D3.js", "PostgreSQL", "AWS"],
+    "type": "project",
+    "status": "completed",
+    "year": "2023",
+    "images": [
+      "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=1200&auto=format",
+      "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": "https://khela.app",
+      "github": "https://github.com/example/khela",
+      "paper": null
+    },
+    "featured": true,
+    "size": "medium"
+  },
+  {
+    "id": "proj-003",
+    "title": "Kartik — Supply Chain OS",
+    "subtitle": "AI-driven procurement & inventory intelligence",
+    "description": "An intelligent supply chain operating system for SMEs in South Asia. Features demand forecasting, supplier risk scoring, and automated PO generation. Reduced procurement cycles by 40% in pilot.",
+    "story": "After consulting with textile manufacturers in Narayanganj, I realized their entire procurement process was run on WhatsApp and Excel. Kartik was designed to be the first supply chain tool that truly fits that context.",
+    "tags": ["Next.js", "Python", "TensorFlow", "PostgreSQL", "Celery", "Redis", "GCP"],
+    "type": "project",
+    "status": "in-progress",
+    "year": "2024",
+    "images": [
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/example/kartik",
+      "paper": null
+    },
+    "featured": false,
+    "size": "medium"
+  },
+  {
+    "id": "proj-004",
+    "title": "Borno — Language Preservation",
+    "subtitle": "Digital archive for endangered South Asian scripts",
+    "description": "A crowdsourced digital preservation platform for endangered scripts and dialects of the Bengal region. Uses computer vision to digitize handwritten manuscripts and AI to generate pronunciation guides.",
+    "story": "My grandmother spoke a dialect that has no digital presence. This project is deeply personal — a love letter to the languages slipping away, built with the tools that might save them.",
+    "tags": ["React", "Python", "PyTorch", "OCR", "AWS S3", "FastAPI", "TypeScript"],
+    "type": "project",
+    "status": "completed",
+    "year": "2023",
+    "images": [
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1200&auto=format",
+      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": "https://borno.heritage.bd",
+      "github": "https://github.com/example/borno",
+      "paper": "https://arxiv.org/example/borno"
+    },
+    "featured": true,
+    "size": "large"
+  }
+]

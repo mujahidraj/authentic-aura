@@ -1,0 +1,76 @@
+[
+  {
+    "id": "exp-001",
+    "title": "AI Research Collaboration",
+    "organization": "MIT Media Lab",
+    "location": "Cambridge, MA, USA",
+    "coordinates": { "lat": 42.3601, "lng": -71.0942 },
+    "period": "2023 (3 months)",
+    "startDate": "2023-06",
+    "endDate": "2023-09",
+    "type": "research",
+    "description": "Visiting researcher collaboration on the 'Cities & Signals' project — exploring how urban data from the Global South can be represented in AI systems without introducing systemic biases.",
+    "achievements": [
+      "Co-authored working paper on equitable AI data collection",
+      "Presented findings at MIT Media Lab weekly symposium",
+      "Built prototype urban data equity scoring framework"
+    ],
+    "tags": ["AI Ethics", "Research", "Urban Computing", "Python", "Data Equity"]
+  },
+  {
+    "id": "exp-002",
+    "title": "Open Source Contributor",
+    "organization": "HuggingFace Community",
+    "location": "Remote / Paris, France",
+    "coordinates": { "lat": 48.8566, "lng": 2.3522 },
+    "period": "2022 – Present",
+    "startDate": "2022-01",
+    "endDate": null,
+    "type": "community",
+    "description": "Active contributor to the HuggingFace Transformers ecosystem, focused on Bengali and South Asian language model support. Maintain two Bengali language datasets with combined 45K downloads.",
+    "achievements": [
+      "2 merged PRs to transformers main branch",
+      "Published Bengali NLP datasets with 45K+ downloads",
+      "HuggingFace Expert badge in NLP & Multilingual AI",
+      "Mentored 8 contributors in the Bangla AI community"
+    ],
+    "tags": ["Open Source", "NLP", "Python", "HuggingFace", "Community"]
+  },
+  {
+    "id": "exp-003",
+    "title": "Tech for Good Fellow",
+    "organization": "a2i (Access to Information Program)",
+    "location": "Dhaka, Bangladesh",
+    "coordinates": { "lat": 23.7808, "lng": 90.3996 },
+    "period": "2021 – 2022",
+    "startDate": "2021-07",
+    "endDate": "2022-06",
+    "type": "fellowship",
+    "description": "Selected for Bangladesh government's flagship digital innovation fellowship. Led AI literacy workshops and built a chatbot for citizen services accessible via SMS — targeting the 60% of Bangladeshis without smartphones.",
+    "achievements": [
+      "Trained 200+ civil servants in data literacy",
+      "SMS chatbot reached 50,000 citizens in pilot",
+      "Presented at UN e-Government Summit 2022",
+      "Policy paper co-authored with UNDP Bangladesh"
+    ],
+    "tags": ["Civic Tech", "AI Literacy", "Python", "NLP", "Policy", "SMS/USSD"]
+  },
+  {
+    "id": "exp-004",
+    "title": "Speaker & Workshop Facilitator",
+    "organization": "PyCon Asia Pacific",
+    "location": "Singapore",
+    "coordinates": { "lat": 1.3521, "lng": 103.8198 },
+    "period": "2023",
+    "startDate": "2023-11",
+    "endDate": "2023-11",
+    "type": "speaking",
+    "description": "Delivered keynote session 'Building NLP for the Other 5 Billion' at PyCon APAC 2023. Workshop on practical transformer fine-tuning for low-resource languages attended by 180+ developers.",
+    "achievements": [
+      "Keynote talk to 800+ attendees",
+      "Workshop: 180 participants, 4.9/5 feedback score",
+      "Session recordings: 12K+ YouTube views"
+    ],
+    "tags": ["Public Speaking", "NLP", "Python", "Teaching", "Community"]
+  }
+]

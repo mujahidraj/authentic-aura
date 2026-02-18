@@ -1,0 +1,57 @@
+{
+  "headline": "Transparent rates. No surprises.",
+  "currency": "USD",
+  "note": "Rates are for remote engagements. In-person consulting in South Asia available at adjusted local rates.",
+  "categories": [
+    {
+      "id": "price-ml",
+      "type": "Machine Learning & AI",
+      "description": "Model development, fine-tuning, MLOps, and production deployment",
+      "rateHourly": 120,
+      "rateProject": "From $4,000",
+      "timeline": "2 – 12 weeks",
+      "deliverables": ["Trained model + evaluation report", "API endpoint", "Documentation", "Handover session"],
+      "tags": ["Python", "NLP", "Computer Vision", "MLOps", "FastAPI"]
+    },
+    {
+      "id": "price-fullstack",
+      "type": "Full-Stack Development",
+      "description": "End-to-end web application development with React and modern backends",
+      "rateHourly": 95,
+      "rateProject": "From $3,000",
+      "timeline": "3 – 16 weeks",
+      "deliverables": ["Responsive web application", "API layer", "Deployment setup", "30-day support"],
+      "tags": ["React", "TypeScript", "Node.js", "PostgreSQL", "AWS"]
+    },
+    {
+      "id": "price-data",
+      "type": "Data Engineering & Analytics",
+      "description": "Data pipelines, warehousing, BI dashboards, and analytics strategy",
+      "rateHourly": 105,
+      "rateProject": "From $2,500",
+      "timeline": "2 – 10 weeks",
+      "deliverables": ["ETL pipelines", "Data warehouse schema", "BI dashboards", "Documentation"],
+      "tags": ["Python", "SQL", "dbt", "Airflow", "BigQuery", "Looker"]
+    },
+    {
+      "id": "price-wordpress",
+      "type": "WordPress & CMS",
+      "description": "High-performance WordPress sites, custom plugins, and WooCommerce stores",
+      "rateHourly": 75,
+      "rateProject": "From $1,500",
+      "timeline": "1 – 8 weeks",
+      "deliverables": ["Custom WordPress build", "Performance optimization", "SEO setup", "Training session"],
+      "tags": ["WordPress", "PHP", "WooCommerce", "Performance", "SEO"]
+    },
+    {
+      "id": "price-consulting",
+      "type": "Strategy & Consulting",
+      "description": "Technical strategy, architecture reviews, team hiring, and AI roadmapping",
+      "rateHourly": 150,
+      "rateProject": "Custom",
+      "timeline": "Ongoing or fixed engagement",
+      "deliverables": ["Strategy document", "Architecture recommendations", "Stakeholder presentations"],
+      "tags": ["Strategy", "Architecture", "AI Roadmap", "Team Building"]
+    }
+  ]
+}

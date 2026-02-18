@@ -1,0 +1,60 @@
+[
+  {
+    "id": "edu-001",
+    "degree": "M.Sc. in Computer Science",
+    "major": "Machine Learning & AI",
+    "institution": "University of Dhaka",
+    "location": "Dhaka, Bangladesh",
+    "coordinates": { "lat": 23.7279, "lng": 90.3984 },
+    "period": "2019 – 2021",
+    "startDate": "2019-09",
+    "endDate": "2021-06",
+    "gpa": "3.92 / 4.00",
+    "description": "Thesis on transformer-based models for low-resource South Asian language understanding. Coursework included Advanced Deep Learning, Probabilistic Graphical Models, and Computational Linguistics.",
+    "achievements": [
+      "Dean's List all four semesters",
+      "Best Thesis Award — Department of CSE",
+      "Published thesis work in ACL Workshop 2021",
+      "Graduate Research Fellowship recipient"
+    ],
+    "tags": ["Machine Learning", "NLP", "Deep Learning", "Research", "Python"]
+  },
+  {
+    "id": "edu-002",
+    "degree": "B.Sc. in Computer Science & Engineering",
+    "major": "Software Engineering",
+    "institution": "Bangladesh University of Engineering and Technology (BUET)",
+    "location": "Dhaka, Bangladesh",
+    "coordinates": { "lat": 23.7260, "lng": 90.3948 },
+    "period": "2014 – 2019",
+    "startDate": "2014-01",
+    "endDate": "2019-06",
+    "gpa": "3.85 / 4.00",
+    "description": "Rigorous engineering curriculum with strong emphasis on algorithms, systems design, and applied mathematics. Final year project on distributed systems for rural connectivity.",
+    "achievements": [
+      "Top 5% of graduating class",
+      "Led University ACM ICPC team to national semi-finals",
+      "Built university's first open-source student portal (3K+ users)",
+      "Teaching Assistant for Data Structures & Algorithms"
+    ],
+    "tags": ["Algorithms", "Systems", "Software Engineering", "C++", "Java", "Mathematics"]
+  },
+  {
+    "id": "edu-003",
+    "degree": "Google Data Analytics Certificate",
+    "major": "Data Analytics",
+    "institution": "Google / Coursera",
+    "location": "Online",
+    "coordinates": { "lat": 37.4220, "lng": -122.0841 },
+    "period": "2022",
+    "startDate": "2022-01",
+    "endDate": "2022-04",
+    "gpa": null,
+    "description": "Completed the full 8-course Google Data Analytics Professional Certificate, covering data cleaning, analysis, visualization, and R programming.",
+    "achievements": [
+      "Completed 8 courses with distinction",
+      "Capstone project: Dhaka Air Quality Analysis"
+    ],
+    "tags": ["R", "SQL", "Tableau", "Data Analysis", "Statistics"]
+  }
+]
