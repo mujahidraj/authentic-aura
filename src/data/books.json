@@ -15,7 +15,7 @@
     "author": "Jhankar Mahbub",
     "color": "#1e3a8a",
     "height": "h-64",
-    "image": "https://m.media-amazon.com/images/I/51r2K8A97VL.jpg",
+    "image": "https://wafilife-media.wafilife.com/uploads/2020/11/%E0%A6%B9%E0%A6%BE%E0%A6%AC%E0%A6%B2%E0%A7%81%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%82-250x389.jpg",
     "review": "The best entry point for any Bengali speaker into the world of logic. It breaks down complex computer science concepts into hilarious, relatable metaphors that stay with you forever.",
     "rating": 5
   },
@@ -25,7 +25,7 @@
     "author": "Jhankar Mahbub",
     "color": "#991b1b",
     "height": "h-64",
-    "image": "https://m.media-amazon.com/images/I/51M3m-K834L.jpg",
+    "image": "https://pbs.com.bd/_next/image?url=https%3A%2F%2Ffs.pbs.com.bd%2FDIR%2FCom%2FPBS%2FProduct%2FImageDetails%2F1902119.jpg&w=640&q=75",
     "review": "The sequel that bridges the gap between a beginner and a professional. It focuses on the mindset of a developer, teaching you how to solve problems like a 'Boss' rather than just typing code.",
     "rating": 5
   },
@@ -35,7 +35,7 @@
     "author": "Jon Yablonski",
     "color": "#581c87",
     "height": "h-64",
-    "image": "https://m.media-amazon.com/images/I/41S3nI6DqdL._SX331_BO1,204,203,200_.jpg",
+    "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1588047880i/50611580.jpg",
     "review": "A masterclass in psychology for designers. Understanding how users perceive and interact with digital interfaces is the secret sauce to building products that feel natural and intuitive.",
     "rating": 5
   },
@@ -45,7 +45,7 @@
     "author": "Jenifer Tidwell",
     "color": "#14532d",
     "height": "h-64",
-    "image": "https://m.media-amazon.com/images/I/51H0f-vSACL._SX379_BO1,204,203,200_.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScfmj3nMIHGz4LWiLoafvwmN-g0IAWJ9CEcZywfyQWWce4fr75i2EGDLjCc6l4Olhpxo6fYLzw1y0LXMl_ewsCZ8LUklUxVpl2CuShsdfwbg&s=10",
     "review": "A comprehensive pattern library for UI. It provides a deep dive into successful interaction design strategies, helping me understand why certain layouts work while others fail.",
     "rating": 4
   },
@@ -55,7 +55,7 @@
     "author": "Susan M. Weinschenk",
     "color": "#9a3412",
     "height": "h-64",
-    "image": "https://m.media-amazon.com/images/I/41Y4A+C69vL._SX352_BO1,204,203,200_.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRewndNsjLO1OUQUzlnCrZb6ow5gSLjg4uTwQ&s",
     "review": "Designing without understanding psychology is just decoration. This book explains the way people think, see, and remember, which is crucial for creating effective user experiences.",
     "rating": 5
   },
@@ -65,27 +65,18 @@
     "author": "Jesse James Garrett",
     "color": "#0f172a",
     "height": "h-64",
-    "image": "https://m.media-amazon.com/images/I/41p9D7E840L._SX396_BO1,204,203,200_.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWz4VFwDOaXfr1rD_mhD_hucFY1BxM6tcpXMoJH5AvUg1nXIvqhCz2wE3OHNUjrtloHScpLUV2TQMKbi4hBrF0sfDOjOBQl-rUuUnhoeubyg&s=10",
     "review": "The foundation of modern UX design. Garrett’s five planes—Strategy, Scope, Structure, Skeleton, and Surface—gave me a clear framework for building products from the ground up.",
     "rating": 5
   },
-  {
-    "id": "b8",
-    "title": "The Design of Everyday Things",
-    "author": "Don Norman",
-    "color": "#7c2d12",
-    "height": "h-64",
-    "image": "https://m.media-amazon.com/images/I/410ZJxyEquL._SX322_BO1,204,203,200_.jpg",
-    "review": "The ultimate book on cognitive engineering. It taught me that if a user can't figure out how to use a door or an app, it's the design's fault, not the user's. A life-changing perspective.",
-    "rating": 5
-  },
+
   {
     "id": "b9",
     "title": "Refactoring UI",
     "author": "Adam Wathan & Steve Schoger",
     "color": "#312e81",
     "height": "h-64",
-    "image": "https://refactoringui.nyc3.cdn.digitaloceanspaces.com/book-cover.png",
+    "image": "https://refactoringui.com/build/assets/book-CiJLZ6K5.png",
     "review": "The practical guide that every developer needs. It moves away from abstract art and provides tactical, actionable advice to make any application look polished and professional.",
     "rating": 5
   },
@@ -95,7 +86,7 @@
     "author": "Robert Greene",
     "color": "#450a0a",
     "height": "h-64",
-    "image": "https://m.media-amazon.com/images/I/41-6eXoBGdL._SX327_BO1,204,203,200_.jpg",
+    "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1694722764i/1303.jpg",
     "review": "A brutal and brilliant study of human nature and social dynamics. While controversial, it provides indispensable insights into the power structures of the professional and social world.",
     "rating": 4
   },
