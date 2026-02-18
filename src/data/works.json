@@ -1,0 +1,56 @@
+[
+  {
+    "id": "work-001",
+    "company": "Shajgoj Ltd.",
+    "role": "Lead Data Scientist & Full-Stack Developer",
+    "location": "Dhaka, Bangladesh",
+    "coordinates": { "lat": 23.8103, "lng": 90.4125 },
+    "period": "2022 – Present",
+    "startDate": "2022-03",
+    "endDate": null,
+    "description": "Lead a cross-functional team building ML-powered product recommendation and demand forecasting systems for Bangladesh's largest beauty e-commerce platform. Drive 35% of revenue through personalization algorithms.",
+    "achievements": [
+      "Built recommendation engine serving 2M+ monthly active users",
+      "Reduced inventory overstock by 28% through demand forecasting",
+      "Architected real-time analytics pipeline processing 500K daily events",
+      "Mentored team of 4 junior engineers"
+    ],
+    "tags": ["Python", "Machine Learning", "React", "FastAPI", "PostgreSQL", "Redis", "AWS", "Airflow"]
+  },
+  {
+    "id": "work-002",
+    "company": "Chaldal",
+    "role": "Data Engineer & Analytics Developer",
+    "location": "Dhaka, Bangladesh",
+    "coordinates": { "lat": 23.7937, "lng": 90.4066 },
+    "period": "2020 – 2022",
+    "startDate": "2020-06",
+    "endDate": "2022-02",
+    "description": "Designed and maintained the data warehouse and BI infrastructure for Bangladesh's first on-demand grocery delivery platform. Built ETL pipelines processing millions of daily transactions.",
+    "achievements": [
+      "Built data warehouse from scratch, enabling company-wide analytics",
+      "Created real-time delivery ETA prediction system (MAE: 3.2 min)",
+      "Designed A/B testing framework used by product and marketing teams",
+      "Automated reporting saving 120 engineering hours monthly"
+    ],
+    "tags": ["Python", "SQL", "BigQuery", "dbt", "Airflow", "Looker", "JavaScript", "GCP"]
+  },
+  {
+    "id": "work-003",
+    "company": "Freelance / Independent",
+    "role": "Full-Stack Developer & ML Consultant",
+    "location": "Remote (Global)",
+    "coordinates": { "lat": 23.6850, "lng": 90.3563 },
+    "period": "2018 – 2020",
+    "startDate": "2018-01",
+    "endDate": "2020-05",
+    "description": "Provided ML consulting and full-stack development services to startups and NGOs across South Asia, UK, and Australia. Specialized in NLP for low-resource languages and data infrastructure for early-stage companies.",
+    "achievements": [
+      "Delivered 12 client projects across 5 countries",
+      "Built NLP system for legal document parsing (NGO client, UK)",
+      "Developed WordPress properties reaching 500K+ combined monthly visitors",
+      "Contributed to 2 open-source projects in the HuggingFace ecosystem"
+    ],
+    "tags": ["Python", "NLP", "React", "WordPress", "Node.js", "MongoDB", "TensorFlow"]
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "ds-001",
+    "title": "Bengali Sentiment Analysis",
+    "subtitle": "Transformer-based NLP for low-resource Bengali",
+    "description": "Fine-tuned a multilingual BERT model on a custom-annotated Bengali social media corpus of 120,000 samples. Achieves 91.3% F1 score on sentiment classification, outperforming prior baselines by 8 points.",
+    "story": "Most NLP resources are English-centric. This project was about proving that a low-resource language could be handled with rigor and care.",
+    "tags": ["Python", "NLP", "Transformers", "BERT", "HuggingFace", "PyTorch", "Pandas"],
+    "type": "data-science",
+    "status": "published",
+    "year": "2023",
+    "images": [
+      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/example/bengali-sentiment",
+      "paper": "https://arxiv.org/example/bengali-nlp"
+    },
+    "featured": true,
+    "size": "large",
+    "notebookType": "jupyter",
+    "codeSnippet": "from transformers import AutoTokenizer, AutoModelForSequenceClassification\nimport torch\n\n# Load fine-tuned Bengali BERT\nmodel_name = \"sagorsarker/bangla-bert-base\"\ntokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForSequenceClassification.from_pretrained(\n    \"./checkpoints/bengali-sentiment-v2\",\n    num_labels=3\n)\n\ndef predict_sentiment(text: str) -> dict:\n    inputs = tokenizer(\n        text, \n        return_tensors=\"pt\",\n        max_length=128,\n        truncation=True,\n        padding=\"max_length\"\n    )\n    with torch.no_grad():\n        outputs = model(**inputs)\n        probs = torch.softmax(outputs.logits, dim=-1)\n    \n    labels = [\"negative\", \"neutral\", \"positive\"]\n    return {labels[i]: round(p.item(), 4) for i, p in enumerate(probs[0])}\n\n# Example inference\nresult = predict_sentiment(\"আমি খুব খুশি আজকে!\")\nprint(result)  # {'negative': 0.03, 'neutral': 0.08, 'positive': 0.89}",
+    "metrics": {
+      "f1": "91.3%",
+      "accuracy": "92.1%",
+      "dataset": "120K samples"
+    }
+  },
+  {
+    "id": "ds-002",
+    "title": "Crop Yield Forecasting",
+    "subtitle": "Satellite imagery + ML for Bangladesh agriculture",
+    "description": "A multi-modal forecasting system combining Sentinel-2 satellite imagery with weather station data to predict rice yield at the upazila level. Deployed as an API for the Bangladesh Agriculture Ministry pilot.",
+    "story": "Over 40% of Bangladesh's workforce is in agriculture. A 10% improvement in yield prediction accuracy directly impacts food security planning for millions.",
+    "tags": ["Python", "Machine Learning", "CNN", "PyTorch", "Satellite Imagery", "GIS", "GeoPandas", "AWS"],
+    "type": "data-science",
+    "status": "deployed",
+    "year": "2024",
+    "images": [
+      "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/example/crop-yield-bd",
+      "paper": "https://arxiv.org/example/crop-yield"
+    },
+    "featured": true,
+    "size": "large",
+    "notebookType": "jupyter",
+    "codeSnippet": "import numpy as np\nimport geopandas as gpd\nfrom sklearn.ensemble import GradientBoostingRegressor\nfrom sklearn.model_selection import cross_val_score\nimport rasterio\nfrom pathlib import Path\n\ndef extract_ndvi(sentinel_path: Path, band_red=4, band_nir=8) -> np.ndarray:\n    \"\"\"Extract NDVI from Sentinel-2 bands.\"\"\"\n    with rasterio.open(sentinel_path) as src:\n        red = src.read(band_red).astype(float)\n        nir = src.read(band_nir).astype(float)\n    \n    ndvi = (nir - red) / (nir + red + 1e-10)\n    return np.clip(ndvi, -1, 1)\n\n# Feature engineering pipeline\nfeatures = [\n    'ndvi_mean_june', 'ndvi_mean_july', 'ndvi_mean_august',\n    'rainfall_june_mm', 'rainfall_july_mm', 'temp_avg_c',\n    'soil_moisture_index', 'flood_days_count'\n]\n\nmodel = GradientBoostingRegressor(\n    n_estimators=300, learning_rate=0.05,\n    max_depth=4, subsample=0.8, random_state=42\n)\n\nscores = cross_val_score(model, X_train, y_train, cv=5, scoring='r2')\nprint(f\"CV R² Score: {scores.mean():.3f} ± {scores.std():.3f}\")",
+    "metrics": {
+      "r2": "0.847",
+      "rmse": "0.31 tons/ha",
+      "coverage": "64 upazilas"
+    }
+  },
+  {
+    "id": "ds-003",
+    "title": "E-commerce Churn Predictor",
+    "subtitle": "Survival analysis for customer retention",
+    "description": "Applied Cox proportional hazards model and LightGBM ensemble to predict 30-day churn for a major Dhaka-based e-commerce platform. SHAP explanations surface actionable retention levers per customer segment.",
+    "story": "The client was losing 23% of monthly active users. After deployment, targeted interventions reduced churn by 31% in the first quarter.",
+    "tags": ["Python", "Machine Learning", "LightGBM", "SHAP", "Survival Analysis", "SQL", "Pandas", "Scikit-learn"],
+    "type": "data-science",
+    "status": "deployed",
+    "year": "2023",
+    "images": [
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/example/churn-predictor",
+      "paper": null
+    },
+    "featured": false,
+    "size": "medium",
+    "notebookType": "jupyter",
+    "codeSnippet": "import lightgbm as lgb\nimport shap\nimport pandas as pd\nfrom lifelines import CoxPHFitter\n\n# Survival analysis baseline\ncph = CoxPHFitter(penalizer=0.1)\ncph.fit(\n    df_survival,\n    duration_col='days_to_churn',\n    event_col='churned',\n    formula='recency + frequency + monetary + days_since_last_order'\n)\ncph.print_summary()\n\n# Gradient boosting classifier\nparams = {\n    'objective': 'binary',\n    'metric': 'auc',\n    'num_leaves': 63,\n    'learning_rate': 0.02,\n    'feature_fraction': 0.8,\n    'bagging_fraction': 0.8,\n    'min_child_samples': 20\n}\n\nbst = lgb.train(params, dtrain, num_boost_round=1000,\n                valid_sets=[dval], callbacks=[lgb.early_stopping(50)])\n\n# SHAP explanations\nexplainer = shap.TreeExplainer(bst)\nshap_values = explainer.shap_values(X_test)\nshap.summary_plot(shap_values, X_test, max_display=15)",
+    "metrics": {
+      "auc": "0.891",
+      "precision": "78.4%",
+      "lift": "3.2x"
+    }
+  }
+]

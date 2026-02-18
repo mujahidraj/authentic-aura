@@ -1,0 +1,80 @@
+[
+  {
+    "id": "wp-001",
+    "title": "Daily Star Digital Rebuild",
+    "subtitle": "News portal modernization for Bangladesh's leading English daily",
+    "description": "Complete redesign and performance optimization of a high-traffic news portal. Migrated to headless WordPress with React front-end, achieving 68% improvement in Core Web Vitals and 40% reduction in bounce rate.",
+    "story": "Legacy media properties face a paradox: they have the content but lose readers to slow, ad-cluttered experiences. This project was about respecting both the archive and the reader.",
+    "tags": ["WordPress", "React", "GraphQL", "WPGraphQL", "Performance", "SEO", "Headless CMS"],
+    "type": "wordpress",
+    "status": "completed",
+    "year": "2023",
+    "images": [
+      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": "https://thedailystar.net",
+      "github": null,
+      "paper": null
+    },
+    "featured": true,
+    "size": "large",
+    "metrics": {
+      "lcp": "1.2s",
+      "bounceReduction": "40%",
+      "coreWebVitals": "+68%"
+    }
+  },
+  {
+    "id": "wp-002",
+    "title": "Chaaklader Fashion",
+    "subtitle": "Luxury e-commerce for artisan textile brand",
+    "description": "Custom WooCommerce experience for a high-end Bangladeshi fashion label. Features product configurator, virtual try-on prototype, and multilingual support (Bengali/English). Integrated with bKash and Stripe payment gateways.",
+    "story": "Bangladeshi artisan fashion deserves the same digital treatment as European luxury brands. This project was about elevating a local brand to global standards.",
+    "tags": ["WordPress", "WooCommerce", "PHP", "JavaScript", "bKash API", "Stripe", "SEO", "Performance"],
+    "type": "wordpress",
+    "status": "completed",
+    "year": "2023",
+    "images": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": "https://chaaklader.com",
+      "github": null,
+      "paper": null
+    },
+    "featured": false,
+    "size": "medium",
+    "metrics": {
+      "conversionIncrease": "+55%",
+      "avgOrderValue": "+30%",
+      "pageSpeed": "94/100"
+    }
+  },
+  {
+    "id": "wp-003",
+    "title": "MedAccess BD",
+    "subtitle": "Healthcare directory & telemedicine portal",
+    "description": "A WordPress-based healthcare directory for Bangladesh connecting patients with verified doctors. Features geolocation-based search, telemedicine booking, prescription management, and HIPAA-aligned data handling.",
+    "story": "Healthcare information in Bangladesh is fragmented and unreliable. This platform started as a simple directory and evolved into a critical infrastructure piece during the COVID-19 response.",
+    "tags": ["WordPress", "PHP", "Google Maps API", "Custom Plugin", "REST API", "Performance", "SEO"],
+    "type": "wordpress",
+    "status": "completed",
+    "year": "2022",
+    "images": [
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": "https://medaccess.com.bd",
+      "github": null,
+      "paper": null
+    },
+    "featured": false,
+    "size": "small",
+    "metrics": {
+      "monthlyUsers": "85K",
+      "doctorsListed": "2,400+",
+      "uptime": "99.9%"
+    }
+  }
+]
