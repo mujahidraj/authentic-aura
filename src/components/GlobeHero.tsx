@@ -99,7 +99,7 @@ export function GlobeHero({ onScrollToWork }: { onScrollToWork?: () => void }) {
           transition={{ delay: 0.5, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <p className="section-label mb-6 tracking-[0.5em]">
-            Full-Stack Engineer · Data Sicence Enthusiast · Wordpress Expert · Information System
+            Full-Stack Engineer · Data Science Enthusiast · Wordpress Expert · Information System
           </p>
         </motion.div>
 

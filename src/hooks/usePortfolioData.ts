@@ -116,6 +116,8 @@ export interface TimelineItem {
   location: string;
   coordinates: { lat: number; lng: number };
   period: string;
+  startDate: string;
+  endDate: string | null;
   type: 'education' | 'work' | 'experience';
   description: string;
   achievements: string[];
@@ -167,6 +169,8 @@ export function usePortfolioData() {
       location: e.location,
       coordinates: e.coordinates,
       period: e.period,
+      startDate: e.startDate,
+      endDate: e.endDate,
       type: 'education' as const,
       description: e.description,
       achievements: e.achievements,
@@ -179,6 +183,8 @@ export function usePortfolioData() {
       location: w.location,
       coordinates: w.coordinates,
       period: w.period,
+      startDate: w.startDate,
+      endDate: w.endDate,
       type: 'work' as const,
       description: w.description,
       achievements: w.achievements,
@@ -191,12 +197,14 @@ export function usePortfolioData() {
       location: e.location,
       coordinates: e.coordinates,
       period: e.period,
+      startDate: e.startDate,
+      endDate: e.endDate,
       type: 'experience' as const,
       description: e.description,
       achievements: e.achievements,
       tags: e.tags,
     })),
-  ].sort((a, b) => b.period.localeCompare(a.period));
+  ].sort((a, b) => b.startDate.localeCompare(a.startDate));
 
   function filterByTag(tag: string): PortfolioItem[] {
     if (!tag || tag === 'All') return allPortfolioItems;

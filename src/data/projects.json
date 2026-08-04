@@ -13,12 +13,138 @@
       "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&auto=format"
     ],
     "links": {
-      "demo": "https://techwisdom.tech",
+      "demo": "https://www.techwisdom.site",
       "github": "https://github.com/mujahidraj/TechWisdom-Technologies",
       "paper": null
     },
     "featured": true,
     "size": "large"
+  },
+  {
+    "id": "project-techwisdom-hub",
+    "title": "TechWisdom Hub",
+    "subtitle": "Agency Workspace Platform",
+    "description": "A central workspace platform for TechWisdom Technologies to manage projects, clients, and internal operations.",
+    "story": "Built to streamline our agency operations, this hub brings everything into one cohesive digital environment.",
+    "tags": ["React", "Workspace", "Management", "Platform"],
+    "type": "agency-platform",
+    "status": "active",
+    "year": "2026",
+    "images": [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": "https://workspace.techwisdom.site",
+      "github": "https://github.com/mujahidraj/techwisdom-hub",
+      "paper": null
+    },
+    "featured": true,
+    "size": "medium"
+  },
+  {
+    "id": "project-talukder-furniture",
+    "title": "Talukder Furniture",
+    "subtitle": "Corporate & E-Commerce Website",
+    "description": "Independently handled the entire lifecycle — planning, UI/UX design, coding, data management, and deployment — for Talukder Furniture, a business unit of Talukder Group of Industries. Deployed and configured the live site on a private server, managing hosting and infrastructure end-to-end.",
+    "story": "This was my first fully independent corporate project from scratch — from initial planning meetings with stakeholders to configuring the production server. It taught me end-to-end ownership of a real business website.",
+    "tags": ["MERN Stack", "E-Commerce", "React", "Node.js", "Playwright"],
+    "type": "e-commerce",
+    "status": "active",
+    "year": "2026",
+    "images": [
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": "https://talukder-furniture.com",
+      "github": "https://github.com/mujahidraj/Talukder-Furniture",
+      "paper": null
+    },
+    "featured": true,
+    "size": "large"
+  },
+  {
+    "id": "project-vocabvault",
+    "title": "VocabVault",
+    "subtitle": "Vocabulary Learning SaaS Platform",
+    "description": "A vocabulary learning SaaS platform with structured word mastery methodology. Features include word sets, spaced repetition flow, and progress tracking for learners.",
+    "story": "Language learning shouldn't be boring. VocabVault uses proven spaced repetition techniques wrapped in a beautiful interface to make building vocabulary an engaging daily habit.",
+    "tags": ["React.js", "Next.js", "Tailwind CSS", "SaaS", "EdTech"],
+    "type": "web-app",
+    "status": "active",
+    "year": "2026",
+    "images": [
+      "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": "https://www.vocabvault.site",
+      "github": "https://github.com/TechWisdom-Technologies/VocabVault",
+      "paper": null
+    },
+    "featured": true,
+    "size": "medium"
+  },
+  {
+    "id": "project-bookverse",
+    "title": "BookVerse",
+    "subtitle": "Full-Stack Book Discovery Platform",
+    "description": "A full-featured book discovery and management platform built on top of books infrastructure. Implements book listings, search/filter functionality, and user-facing reading management features.",
+    "story": "BookVerse was born from a passion for reading and technology. I wanted to create a platform where book lovers can discover, track, and manage their reading journey with a modern, intuitive interface.",
+    "tags": ["Next.js", "Tailwind CSS", "PostgreSQL", "PrismaORM", "Redis", "Full-Stack"],
+    "type": "web-app",
+    "status": "active",
+    "year": "2026",
+    "images": [
+      "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": "https://www.bookverse.techwisdom.site",
+      "github": "https://github.com/TechWisdom-Technologies/BookVerse",
+      "paper": null
+    },
+    "featured": true,
+    "size": "medium"
+  },
+  {
+    "id": "project-ahb-study-abroad",
+    "title": "AHB Study Abroad",
+    "subtitle": "Educational Consultancy Platform",
+    "description": "A comprehensive platform for AHB Study Abroad to manage student profiles, university applications, and visa processing workflows.",
+    "story": "Simplifying the complex journey of studying abroad through structured digital workflows.",
+    "tags": ["Next.js", "Education", "Consultancy", "Platform"],
+    "type": "agency-platform",
+    "status": "active",
+    "year": "2026",
+    "images": [
+      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/TechWisdom-Technologies/ahb-study-abroad",
+      "paper": null
+    },
+    "featured": false,
+    "size": "medium"
+  },
+  {
+    "id": "project-whiteboard-education",
+    "title": "Whiteboard Education",
+    "subtitle": "Digital Learning Environment",
+    "description": "An interactive educational platform focusing on digital whiteboard capabilities, live classes, and resource sharing for students and educators.",
+    "story": "Focused on bringing the traditional classroom experience into a seamless digital interface.",
+    "tags": ["React", "EdTech", "WebRTC", "Canvas", "Education"],
+    "type": "web-app",
+    "status": "active",
+    "year": "2026",
+    "images": [
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&auto=format"
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/TechWisdom-Technologies/whiteboard-education",
+      "paper": null
+    },
+    "featured": false,
+    "size": "medium"
   },
   {
     "id": "project-cambry",
@@ -31,14 +157,14 @@
     "status": "completed",
     "year": "2026",
     "images": [
-      "https://www.cambrybd.com/assets/Cambry_Official_logo.webp"
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&auto=format"
     ],
     "links": {
       "demo": null,
       "github": "https://github.com/mujahidraj/cambry-2",
       "paper": null
     },
-    "featured": true,
+    "featured": false,
     "size": "medium"
   },
   {

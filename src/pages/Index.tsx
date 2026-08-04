@@ -125,9 +125,6 @@ const Index = () => {
         {/* 6. Journey */}
         <div id="journey" className="scroll-mt-24 bg-gradient-to-b from-transparent to-black/30 py-24">
            <SectionWrapper className="px-4 md:px-8 lg:px-16 max-w-6xl mx-auto">
-             <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-5xl font-display font-bold">The Journey</h2>
-             </div>
              <LifeTimeline items={timeline} />
            </SectionWrapper>
         </div>

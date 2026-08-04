@@ -1,56 +1,56 @@
 [
   {
     "id": "exp-001",
-    "title": "Junior Web Developer (Internship)",
-    "organization": "Tech Solutions Inc.",
-    "location": "Remote",
-    "coordinates": { "lat": 23.7808, "lng": 90.3996 },
-    "period": "2023 (3 months)",
-    "startDate": "2023-06",
-    "endDate": "2023-09",
-    "type": "internship",
-    "description": "Developed and maintained web applications using React, JavaScript, and Node.js. Collaborated with senior developers to implement new features and fix bugs in existing projects.",
+    "title": "Junior React Developer",
+    "organization": "TechWisdom Technologies",
+    "location": "Bashundara RA, Dhaka",
+    "coordinates": { "lat": 23.8103, "lng": 90.4125 },
+    "period": "May 2025 – Dec 2025",
+    "startDate": "2025-05",
+    "endDate": "2025-12",
+    "type": "Part-time",
+    "description": "Developed and maintained responsive frontend web applications using React.js, Tailwind CSS, and Next.js. Integrated Firebase authentication, routing, and third-party packages into production-grade projects. Collaborated on the TechWisdom Learning System — a full-stack ERP SaaS with HRM, CRM, CMS, and real-time video/audio calling and chat features.",
     "achievements": [
-      "Built responsive web applications with React and Bootstrap",
-      "Improved application performance by 30% through code optimization",
-      "Mentored 2 junior developers on best practices in web development"
+      "Developed and maintained responsive frontend web applications using React.js, Tailwind CSS, and Next.js",
+      "Integrated Firebase authentication, routing, and third-party packages into production-grade projects",
+      "Collaborated on the TechWisdom Learning System — a full-stack ERP SaaS with HRM, CRM, CMS, and real-time video/audio calling and chat features"
     ],
-    "tags": ["Web Development", "React", "JavaScript", "Node.js", "Bootstrap"]
+    "tags": ["JavaScript ES6+", "React.js", "Tailwind CSS", "Next.js", "NestJS", "PostgreSQL", "PrismaORM"]
   },
   {
     "id": "exp-002",
-    "title": "Team Lead - Web Development",
-    "organization": "Tech Solutions Inc.",
-    "location": "Remote",
-    "coordinates": { "lat": 23.7808, "lng": 90.3996 },
-    "period": "2024 – 2024",
-    "startDate": "2023-09",
-    "endDate": "2024-09",
-    "type": "Part-time",
-    "description": "Led a team of 5 developers in building open-source NLP tools for Bengali language processing. Managed project timelines, coordinated contributions, and ensured code quality through regular reviews and testing.",
+    "title": "Intern, Creative & Designing",
+    "organization": "24/7 Communications Ltd.",
+    "location": "Baridhara DOHS, Dhaka",
+    "coordinates": { "lat": 23.7984, "lng": 90.4254 },
+    "period": "Feb 2026 – May 2026",
+    "startDate": "2026-02",
+    "endDate": "2026-05",
+    "type": "internship",
+    "description": "Designed social media graphics, print media materials (flyers, brochures, event banners), and supported brand identity maintenance across various client campaigns. Applied a technical background in Computer Science to optimize digital file workflows and understand platform-specific design specifications.",
     "achievements": [
-      "Successfully launched 3 open-source NLP libraries with 500+ GitHub stars",
-      "Organized monthly virtual meetups with 200+ attendees to discuss NLP advancements",
-      "Secured funding from local tech organizations to support ongoing development"
+      "Designed social media graphics, print media materials (flyers, brochures, event banners), and supported brand identity maintenance across various client campaigns",
+      "Applied a technical background in Computer Science to optimize digital file workflows and understand platform-specific design specifications",
+      "Collaborated effectively with cross-departmental teams while adhering to organizational policies and confidentiality requirements"
     ],
-    "tags": ["Civic Tech", "NLP", "Python", "Leadership", "Open Source"]
+    "tags": ["Graphic Design", "Social Media", "Print Media", "Brand Identity", "Digital Workflows"]
   },
   {
-    "id": "exp-004",
-    "title": "Full Stack Developer",
-    "organization": "TechWisdom Technologies",
-    "location": "Remote",
-    "coordinates": { "lat": 1.3521, "lng": 103.8198 },
-    "period": "2025 – 2025",
-    "startDate": "2025-06",
-    "endDate": "2026-02",
-    "type": "Part-time",
-    "description": "Currently developing a data analytics platform using React, Node.js, and PostgreSQL to help businesses make data-driven decisions. The platform includes interactive dashboards, real-time data processing, and integration with various data sources.",
+    "id": "exp-003",
+    "title": "IT Executive",
+    "organization": "Talukder Group of Industries",
+    "location": "Nikunjo-2, Dhaka",
+    "coordinates": { "lat": 23.8322, "lng": 90.4186 },
+    "period": "Jun 2026 – Present",
+    "startDate": "2026-06",
+    "endDate": null,
+    "type": "Full-time",
+    "description": "Developing individual websites for the group's business units — Furniture, Plastics, UPVC, and E-Commerce — alongside the main Group website. Led planning, design, and development of the Furniture website end-to-end, now substantially complete and live. Handling remaining unit websites individually, from planning through deployment.",
     "achievements": [
-      "Developed a data analytics platform with real-time processing capabilities",
-      "Integrated multiple data sources to provide comprehensive insights for businesses",
-      "Received positive feedback from clients for improving their decision-making processes"
+      "Developing individual websites for the group's business units — Furniture, Plastics, UPVC, and E-Commerce — alongside the main Group website",
+      "Led planning, design, and development of the Furniture website end-to-end, now substantially complete and live",
+      "Handling remaining unit websites individually, from planning through deployment"
     ],
-    "tags": ["Data Analytics", "Full Stack Development", "React", "Node.js", "PostgreSQL"]
+    "tags": ["Web Development", "Full-Stack", "Project Management", "WordPress", "E-Commerce"]
   }
 ]

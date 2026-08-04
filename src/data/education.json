@@ -1,10 +1,9 @@
-
-  [ 
+[ 
   {
     "id": "edu-001",
     "degree": "Secondary School Certificate (SSC)",
     "major": "Science",
-    "institution": "Cambrian School and College",
+    "institution": "Cambrian School & College",
     "location": "Dhaka, Bangladesh",
     "coordinates": { "lat": 23.7260, "lng": 90.3948 },
     "period": "2017 – 2018",
@@ -23,14 +22,14 @@
     "id": "edu-002",
     "degree": "Higher Secondary Certificate (HSC)",
     "major": "Science",
-    "institution": "Cambrian School and College",
+    "institution": "King's College, Dhaka",
     "location": "Dhaka, Bangladesh",
-    "coordinates": { "lat": 23.7260, "lng": 90.3948 },
-    "period": "2018 – 2020",
-    "startDate": "2018-01",
+    "coordinates": { "lat": 23.7508, "lng": 90.3929 },
+    "period": "2019 – 2020",
+    "startDate": "2019-01",
     "endDate": "2020-05",
     "gpa": "5.00 / 5.00",
-    "description": "Completed Higher Secondary education with a focus on Science. Excelled in Physics, Chemistry, and Mathematics, laying a strong foundation for engineering studies. Actively participated in science fairs and math competitions, winning several awards at the district level.",
+    "description": "Completed Higher Secondary education with a focus on Science at King's College, Dhaka. Excelled in Physics, Chemistry, and Mathematics, laying a strong foundation for engineering studies. Actively participated in science fairs and math competitions.",
     "achievements": [
       "Secured 10th place in the Dhaka District Science Fair (2019)",
       "Received the 'Best Student' award for outstanding academic performance",
@@ -45,11 +44,11 @@
     "institution": "Programming Hero",
     "location": "Online",
     "coordinates": { "lat": 37.4220, "lng": -122.0841 },
-    "period": "2024",
-    "startDate": "2024-01",
-    "endDate": "2024-08",
+    "period": "2025",
+    "startDate": "2025-01",
+    "endDate": "2025-08",
     "gpa": null,
-    "description": "Intensive 8-month program covering HTML, CSS, JavaScript, React, Node.js, and database management. Completed multiple projects including a social media app and an e-commerce site.",
+    "description": "Intensive 6-month program covering HTML, CSS, JavaScript, React, Node.js, and database management. Completed multiple projects including a social media app and an e-commerce site.",
     "achievements": [
       "Completed 500+ coding challenges on HackerRank",
       "Built and deployed 5 full-stack projects on GitHub",
@@ -60,25 +59,24 @@
   },
 
   {
-    "id": "edu-002",
+    "id": "edu-004",
     "degree": "B.Sc. in Computer Science & Engineering",
-    "major": "Software Engineering",
+    "major": "Information Systems",
     "institution": "American International University-Bangladesh (AIUB)",
     "location": "Dhaka, Bangladesh",
     "coordinates": { "lat": 23.7260, "lng": 90.3948 },
-    "period": "2022 ",
+    "period": "2022 – 2026",
     "startDate": "2022-01",
-    "endDate": "2025-10",
+    "endDate": "2026-05",
     "gpa": "3.65 / 4.00",
-    "description": "Rigorous engineering curriculum with strong emphasis on algorithms, systems design, and applied mathematics. Final year project on distributed systems for rural connectivity.",
+    "description": "Rigorous engineering curriculum with strong emphasis on algorithms, systems design, and applied mathematics. Major in Information Systems with dual expertise in data-centric principles from Data Science and Human-Computer Interaction.",
     "achievements": [
-      "Graduated with First Class Honors",
+      "Graduated with CGPA 3.65 / 4.0",
       "AIUB Merit Scholarship recipient for 6 semesters",
-        "Final year project published in IEEE Access 2025",
-        "Published 2 research papers in national conferences",
-        
+      "Final year project published in IEEE Access 2025",
+      "Published 2 research papers in national conferences",
       "Built university's first open-source student portal (1k+ users)"
     ],
-    "tags": ["Algorithms", "Systems", "Software Engineering", "C++", "Java", "Mathematics"]
+    "tags": ["Algorithms", "Systems", "Information Systems", "C++", "Java", "Mathematics"]
   } 
 ]
