@@ -1,25 +1,5 @@
 [
-  {
-    "id": "project-techwisdom",
-    "title": "TechWisdom Technologies",
-    "subtitle": "Official Agency Website",
-    "description": "The digital home for TechWisdom Technologies, a software agency co-founded to deliver high-end digital solutions. The site showcases the agency's mission, service offerings, and technological expertise.",
-    "story": "Building this site was about more than just code; it was about defining a brand identity and a professional standard for our agency's clients.",
-    "tags": ["React", "Node.js", "Agency", "Branding", "UI/UX"],
-    "type": "agency",
-    "status": "active",
-    "year": "2026",
-    "images": [
-      "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&auto=format"
-    ],
-    "links": {
-      "demo": "https://www.techwisdom.site",
-      "github": "https://github.com/mujahidraj/TechWisdom-Technologies",
-      "paper": null
-    },
-    "featured": true,
-    "size": "large"
-  },
+
   {
     "id": "project-techwisdom-hub",
     "title": "TechWisdom Hub",

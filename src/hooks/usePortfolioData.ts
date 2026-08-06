@@ -1,5 +1,4 @@
 import projectsData from '../data/projects.json';
-import demoProjectsData from '../data/demo_projects.json';
 import dataScienceWorksData from '../data/data_science_works.json';
 import wordpressWorksData from '../data/wordpress_works.json';
 import worksData from '../data/works.json';
@@ -126,7 +125,6 @@ export interface TimelineItem {
 
 export function usePortfolioData() {
   const projects = projectsData as PortfolioItem[];
-  const demoProjects = demoProjectsData as PortfolioItem[];
   const dataScienceWorks = dataScienceWorksData as PortfolioItem[];
   const wordpressWorks = wordpressWorksData as PortfolioItem[];
   const works = worksData as WorkItem[];
@@ -138,7 +136,6 @@ export function usePortfolioData() {
   // All portfolio grid items combined
   const allPortfolioItems: PortfolioItem[] = [
     ...projects,
-    ...demoProjects,
     ...dataScienceWorks,
     ...wordpressWorks,
     ...(publications.map(p => ({
@@ -215,7 +212,6 @@ export function usePortfolioData() {
 
   return {
     projects,
-    demoProjects,
     dataScienceWorks,
     wordpressWorks,
     works,
