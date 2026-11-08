@@ -1,6 +1,6 @@
 # Mujahid Rashid Portfolio
 
-Official portfolio of Moizuddin Mohammad Mujahid Rashid, Co-Founder of **TechWisdom Technologies**. This project showcases high-performance web applications, UI/UX design, and technical research.
+Official portfolio of Moizuddin Mohammad Mujahid Rashid, Full Stack Developer. This project showcases high-performance web applications, UI/UX design, and technical research.
 
 ## 🚀 Tech Stack
 
