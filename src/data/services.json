@@ -2,36 +2,203 @@
   {
     "id": "s1",
     "title": "Web Development",
-    "description": "Building responsive, high-performance websites and web applications using modern frameworks and best practices to ensure a seamless user experience.",
+    "tagline": "Production-grade full-stack web apps, SaaS platforms & commerce systems",
+    "description": "Building responsive, high-performance websites and full-stack applications from database architecture and APIs to polished interfaces and live deployment.",
     "icon": "Code",
-    "tags": ["Frontend", "Backend", "Full Stack"]
+    "tags": ["Frontend", "Backend", "Full Stack"],
+    "whatICanDo": [
+      "Full-stack SaaS platforms and multi-role admin dashboards (users, content, analytics, moderation, and reporting)",
+      "Corporate e-commerce storefronts & product catalogues with wishlists, enquiries, bulk imports, and payment gateways (Stripe, UddoktaPay)",
+      "Agency ERP & internal operations platforms covering CRM lead pipelines, HR/payroll, invoicing, tasks, and client portals",
+      "Bilingual educational & study-abroad consultancy portals with university search, lead capture, and application workflows",
+      "Cross-platform packaging (PWA, Android via Capacitor, Desktop via Electron) plus native Android apps with Kotlin & Jetpack Compose",
+      "Schema design, migrations, private server deployment, and automated testing with Vitest & Playwright"
+    ],
+    "whatIKnow": [
+      "React 18", "Next.js", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "Framer Motion",
+      "Node.js", "Express", "NestJS", "Prisma ORM", "PostgreSQL", "Supabase", "Firebase Auth",
+      "Redis", "Cloudflare R2", "Resend", "Stripe", "UddoktaPay", "Kotlin", "Jetpack Compose",
+      "Capacitor", "Electron", "Playwright", "Vitest"
+    ],
+    "provenWork": [
+      {
+        "name": "BookVerse",
+        "summary": "Full-stack PDF/EPUB reading & serialized story publishing platform with Stripe/UddoktaPay & Cloudflare R2",
+        "url": "https://www.bookversebd.site"
+      },
+      {
+        "name": "Talukder Furniture & Talukder uPVC",
+        "summary": "End-to-end corporate commerce & CMS platforms built with React, Express/NestJS, and Prisma",
+        "url": "https://www.talukder-furniture.com"
+      },
+      {
+        "name": "Whiteboard Education",
+        "summary": "Educational services platform with student journeys, partner workflows, and Supabase backend",
+        "url": "https://www.whiteboardeducation.org"
+      },
+      {
+        "name": "TechWisdom Hub",
+        "summary": "Comprehensive ERP & operations workspace packaged for Web (PWA), Android, and Desktop",
+        "url": "https://workspace.techwisdom.site"
+      }
+    ]
   },
   {
     "id": "s2",
     "title": "UI/UX Design",
-    "description": "Crafting intuitive and visually stunning user interfaces. I focus on user-centered design principles to turn complex ideas into functional digital experiences.",
+    "tagline": "Interfaces, design systems & brand visuals engineered for clarity",
+    "description": "Crafting intuitive, visually distinctive user interfaces and cohesive brand visuals that turn complex workflows into effortless digital experiences.",
     "icon": "PenTool",
-    "tags": ["Figma", "Wireframing", "Prototyping"]
+    "tags": ["Figma", "Wireframing", "Prototyping"],
+    "whatICanDo": [
+      "End-to-end web and mobile UI/UX design from low-fidelity wireframes to high-craft interactive prototypes",
+      "Reusable component libraries and design systems tailored for dark/light themes and responsive breakpoints",
+      "Smooth micro-interactions, kinetic transitions, and interactive visual elements with Framer Motion",
+      "Information architecture for complex dashboards, multi-category product catalogues, and bilingual portals",
+      "Brand identity maintenance, social media graphics, flyers, brochures, and event banners for client campaigns"
+    ],
+    "whatIKnow": [
+      "Figma", "Wireframing", "Interactive Prototyping", "Design Systems", "Responsive UI",
+      "Tailwind CSS", "shadcn/ui", "Framer Motion", "Brand Identity", "Print & Social Media Design",
+      "Information Architecture"
+    ],
+    "provenWork": [
+      {
+        "name": "Authentic Aura",
+        "summary": "Custom interactive portfolio featuring bento grids, custom cursor, and bespoke modal previews",
+        "url": "https://www.mujahidraj.site"
+      },
+      {
+        "name": "TechWisdom Technologies",
+        "summary": "Agency showcase with interactive technology globe, splash screen, and sleek product demos",
+        "url": "https://www.techwisdom.site"
+      },
+      {
+        "name": "LifeOS",
+        "summary": "Cohesive offline-first Android dashboard UI designed and built in Jetpack Compose",
+        "url": "https://github.com/mujahidraj/LifeOS"
+      },
+      {
+        "name": "24/7 Communications Ltd.",
+        "summary": "Creative & Designing internship — social media graphics, print media, and brand identity workflows",
+        "url": null
+      }
+    ]
   },
   {
     "id": "s3",
     "title": "Data Analysis",
-    "description": "Transforming raw data into actionable insights. I use statistical tools and visualization techniques to help drive informed, data-driven decisions.",
+    "tagline": "Machine learning, data preprocessing & research-grade analytics",
+    "description": "Transforming raw datasets into structured, analysis-ready pipelines, predictive models, and clear visual insights backed by academic research.",
     "icon": "BarChart3",
-    "tags": ["Statistics", "Visualization", "Insights"]
+    "tags": ["Statistics", "Visualization", "Insights"],
+    "whatICanDo": [
+      "Data cleaning, normalization, missing-value imputation, class balancing, and feature engineering",
+      "Exploratory data analysis (EDA), correlation studies, confusion matrices, and publication-ready charts",
+      "Computer vision & transfer learning pipelines (VGG16, ResNet50, DenseNet121, hybrid ensembles) with Grad-CAM explainability",
+      "Textual and behavioral data mining for classification tasks such as fraud and fake review detection",
+      "Automated dataset scraping, curation, augmentation, and structured database import utilities"
+    ],
+    "whatIKnow": [
+      "Python", "R", "TensorFlow", "Keras", "Transfer Learning", "Ensemble Learning",
+      "Grad-CAM", "Data Mining", "Statistical Analysis", "Data Visualization",
+      "Dataset Scraping & Preprocessing", "Jupyter Notebooks"
+    ],
+    "provenWork": [
+      {
+        "name": "Skin Diseases Classification",
+        "summary": "5-class dermatology classifier (up to 2,000 images/class) using VGG16, ResNet50, DenseNet121 & Grad-CAM",
+        "url": "https://github.com/mujahidraj/Skin-Diseases-Classification"
+      },
+      {
+        "name": "Heart Disease Quantum Data Preprocessing",
+        "summary": "R-based normalization, imputation, and correlation pipeline for quantum ML features",
+        "url": "https://github.com/mujahidraj/Heart-Prediction-Quantum-Dataset-Preprocessing"
+      },
+      {
+        "name": "BIM 2025 Conference Publication",
+        "summary": "Lightweight data mining approach for fake review detection combining textual & behavioral analysis",
+        "url": null
+      }
+    ]
   },
   {
     "id": "s4",
     "title": "IT Support",
-    "description": "Providing comprehensive technical assistance, from hardware troubleshooting to software configuration, ensuring your systems run smoothly and efficiently.",
+    "tagline": "Infrastructure, private server deployment & reliable tech operations",
+    "description": "Providing end-to-end technical infrastructure, server deployment, system administration, and troubleshooting so your business runs without interruption.",
     "icon": "Settings",
-    "tags": ["Troubleshooting", "Hardware", "Software"]
+    "tags": ["Troubleshooting", "Hardware", "Software"],
+    "whatICanDo": [
+      "Private server configuration, production hosting setup, domain/DNS routing, and SSL deployment",
+      "Database administration, automated SQL backups, schema migrations, and Redis session management",
+      "Production monitoring, error tracking (Sentry), activity logging, and security/access audits",
+      "Hardware & software troubleshooting, system configuration, and day-to-day corporate IT operations",
+      "Rolling out and maintaining internal CMS, ERP, and multi-unit company web properties"
+    ],
+    "whatIKnow": [
+      "Private Server Deployment", "Hosting & DNS", "PostgreSQL & Supabase Ops",
+      "SQL Backups & Migrations", "Sentry Monitoring", "Redis", "Role-Based Access Control",
+      "Hardware Troubleshooting", "Software Configuration", "Technical Documentation"
+    ],
+    "provenWork": [
+      {
+        "name": "Talukder Group of Industries (IT Executive)",
+        "summary": "Managing hosting, private server deployment, and web infrastructure across multiple business units",
+        "url": "https://www.talukder-furniture.com"
+      },
+      {
+        "name": "VocabVault Operations",
+        "summary": "Sentry monitoring, Redis-backed sessions, Playwright E2E testing, and security documentation",
+        "url": "https://www.vocabvault.site"
+      },
+      {
+        "name": "TechWisdom Hub",
+        "summary": "Internal workspace administration with audit trails, document management, and role permissions",
+        "url": "https://workspace.techwisdom.site"
+      }
+    ]
   },
   {
     "id": "s5",
-    "title": "WordPress Development",
-    "description": "Designing and developing custom WordPress sites, including theme customization and plugin integration, tailored to your specific business needs.",
-    "icon": "Globe",
-    "tags": ["CMS", "Custom Themes", "Plugins"]
+    "title": "AI Automation",
+    "tagline": "LLM integrations, intelligent agents & automated business workflows",
+    "description": "Designing and deploying intelligent AI workflows, LLM-powered product features, and automated pipelines that eliminate repetitive work and scale operations.",
+    "icon": "Bot",
+    "tags": ["AI Agents", "Workflows", "LLM Integration"],
+    "whatICanDo": [
+      "Integrating LLMs (Gemini, Groq) directly into web apps for AI-assisted writing, learning, summarization, and creative generation",
+      "Building voice & speech AI features (speech-to-text, pronunciation practice, text-to-speech) with Deepgram and speech APIs",
+      "Creating interactive AI requirement assistants, support bots, and internal workspace copilots",
+      "Automating data collection, scraping/import pipelines, scheduled notifications, and multi-step business workflows",
+      "Orchestrating reliable API & webhook automations with structured outputs, guardrails, and admin oversight"
+    ],
+    "whatIKnow": [
+      "Gemini API", "Groq", "Deepgram Speech AI", "LLM Integration", "AI Agents",
+      "Prompt Engineering", "Workflow Automation", "Web Scraping & ETL",
+      "Webhook & API Orchestration", "Text-to-Speech", "AI-Assisted UX"
+    ],
+    "provenWork": [
+      {
+        "name": "VocabVault",
+        "summary": "Deepgram speech integration and Gemini/Groq AI-assisted vocabulary learning activities",
+        "url": "https://www.vocabvault.site"
+      },
+      {
+        "name": "BookVerse",
+        "summary": "AI-powered writing, cover, and illustration tools paired with text-to-speech reading",
+        "url": "https://www.bookversebd.site"
+      },
+      {
+        "name": "TechWisdom Hub",
+        "summary": "Built-in AI assistance and automated workflows for agency operations and reporting",
+        "url": "https://workspace.techwisdom.site"
+      },
+      {
+        "name": "TechWisdom Technologies",
+        "summary": "Interactive requirement assistant guiding clients through project scoping",
+        "url": "https://www.techwisdom.site"
+      }
+    ]
   }
 ]

@@ -1,41 +1,49 @@
 [
-
   {
-    "id": "project-techwisdom-hub",
-    "title": "TechWisdom Hub",
-    "subtitle": "Agency Workspace Platform",
-    "description": "A central workspace platform for TechWisdom Technologies to manage projects, clients, and internal operations.",
-    "story": "Built to streamline our agency operations, this hub brings everything into one cohesive digital environment.",
-    "tags": ["React", "Workspace", "Management", "Platform"],
-    "type": "agency-platform",
+    "id": "project-bookverse",
+    "title": "BookVerse",
+    "subtitle": "Reading & Serialized Story Publishing Platform",
+    "description": "A full-stack platform for reading PDF/EPUB books and publishing serialized stories, with personal libraries, annotations, reviews, reading progress, offline access, challenges, recommendations, and text-to-speech. Authors get story editors, scheduled chapters, beta readers, analytics, newsletters, series and shared universes; readers get clubs, comments, reactions, polls, and following.",
+    "story": "Built with Prisma (substantial schema and migrations), Firebase authentication, Cloudflare R2 storage, Resend email, Stripe and UddoktaPay payments, AI-powered writing/cover/illustration tools, plus extensive moderation and administration workflows.",
+    "tags": ["Next.js", "TypeScript", "Prisma", "Firebase", "Cloudflare R2", "Resend", "Stripe", "UddoktaPay"],
+    "type": "web-app",
     "status": "active",
     "year": "2026",
     "images": [
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&auto=format"
+      "/Images/Bookverse.png",
+      "/Images/Bookverse%202.png",
+      "/Images/Bookverse%203.png",
+      "/Images/bookverse%204.png",
+      "/Images/Bookverse%205.png",
+      "/Images/Bookverse%206.png",
+      "/Images/Bookverse%207.png"
     ],
     "links": {
-      "demo": "https://workspace.techwisdom.site",
-      "github": "https://github.com/mujahidraj/techwisdom-hub",
+      "demo": "https://www.bookversebd.site",
+      "github": "https://github.com/TechWisdom-Technologies/BookVerse",
       "paper": null
     },
     "featured": true,
-    "size": "medium"
+    "size": "large"
   },
   {
     "id": "project-talukder-furniture",
     "title": "Talukder Furniture",
-    "subtitle": "Corporate & E-Commerce Website",
-    "description": "Independently handled the entire lifecycle — planning, UI/UX design, coding, data management, and deployment — for Talukder Furniture, a business unit of Talukder Group of Industries. Deployed and configured the live site on a private server, managing hosting and infrastructure end-to-end.",
-    "story": "This was my first fully independent corporate project from scratch — from initial planning meetings with stakeholders to configuring the production server. It taught me end-to-end ownership of a real business website.",
-    "tags": ["MERN Stack", "E-Commerce", "React", "Node.js", "Playwright"],
+    "subtitle": "Furniture Catalog & Commerce Platform",
+    "description": "A TypeScript full-stack furniture catalog and commerce platform built around Talukder Furniture's home and office product range. Supports public shopping, product details, wishlists, store/contact pages, careers, and a substantial admin area for managing products, categories, sets, images, leads, and site content.",
+    "story": "Built for Talukder Group of Industries — a React, Vite, and Tailwind client paired with a Node.js, Express, and Prisma backend.",
+    "tags": ["React", "TypeScript", "Vite", "Tailwind CSS", "Node.js", "Express", "Prisma"],
     "type": "e-commerce",
     "status": "active",
     "year": "2026",
     "images": [
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&auto=format"
+      "/Images/Talukder%20Furniture.png",
+      "/Images/Talukder%20Furniture%202.png",
+      "/Images/Talukder%20Furniture%203.png",
+      "/Images/Talukder%20Furniture%204.png"
     ],
     "links": {
-      "demo": "https://talukder-furniture.com",
+      "demo": "https://www.talukder-furniture.com",
       "github": "https://github.com/mujahidraj/Talukder-Furniture",
       "paper": null
     },
@@ -43,63 +51,120 @@
     "size": "large"
   },
   {
-    "id": "project-vocabvault",
-    "title": "VocabVault",
-    "subtitle": "Vocabulary Learning SaaS Platform",
-    "description": "A vocabulary learning SaaS platform with structured word mastery methodology. Features include word sets, spaced repetition flow, and progress tracking for learners.",
-    "story": "Language learning shouldn't be boring. VocabVault uses proven spaced repetition techniques wrapped in a beautiful interface to make building vocabulary an engaging daily habit.",
-    "tags": ["React.js", "Next.js", "Tailwind CSS", "SaaS", "EdTech"],
-    "type": "web-app",
+    "id": "project-lifeos",
+    "title": "LifeOS",
+    "subtitle": "Offline-First Personal Productivity Suite",
+    "description": "An intelligent, offline-first personal productivity and lifestyle management suite for Android. It unifies task planning, daily routines, habit formation, financial tracking, health metrics, and smart goal milestones into a single, cohesive dashboard.",
+    "story": "Designed to help you organize and elevate every aspect of your daily life — built natively with Kotlin and Jetpack Compose.",
+    "tags": ["Kotlin", "Jetpack Compose", "Android", "Mobile App"],
+    "type": "mobile-app",
     "status": "active",
     "year": "2026",
     "images": [
-      "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1200&auto=format"
+      "/Images/Lifeos.jpeg",
+      "/Images/lifeos2.jpeg",
+      "/Images/Lifeos3.jpeg",
+      "/Images/Lifeos4.jpeg",
+      "/Images/Lifeos5.jpeg",
+      "/Images/lifeos6.jpeg",
+      "/Images/lifeos7.jpeg",
+      "/Images/lifeos8.jpeg",
+      "/Images/lifeos9.jpeg"
     ],
     "links": {
-      "demo": "https://www.vocabvault.site",
-      "github": "https://github.com/TechWisdom-Technologies/VocabVault",
+      "demo": null,
+      "github": "https://github.com/mujahidraj/LifeOS",
       "paper": null
     },
-    "featured": true,
+    "featured": false,
     "size": "medium"
   },
   {
-    "id": "project-bookverse",
-    "title": "BookVerse",
-    "subtitle": "Full-Stack Book Discovery Platform",
-    "description": "A full-featured book discovery and management platform built on top of books infrastructure. Implements book listings, search/filter functionality, and user-facing reading management features.",
-    "story": "BookVerse was born from a passion for reading and technology. I wanted to create a platform where book lovers can discover, track, and manage their reading journey with a modern, intuitive interface.",
-    "tags": ["Next.js", "Tailwind CSS", "PostgreSQL", "PrismaORM", "Redis", "Full-Stack"],
-    "type": "web-app",
+    "id": "project-techwisdom-technologies",
+    "title": "TechWisdom Technologies",
+    "subtitle": "Company Showcase Website",
+    "description": "A company showcase website presenting TechWisdom Technologies' services, products, portfolio, case studies, blog, pricing, careers, gallery, contact information, and project demonstrations through a polished interface with interactive backgrounds, a technology globe, splash screen, chat button, and requirement assistant.",
+    "story": "Includes structured project, product, blog, job-opening, and demo data, SEO components, responsive UI utilities, Vitest testing, and deployment configuration.",
+    "tags": ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui"],
+    "type": "agency",
     "status": "active",
     "year": "2026",
     "images": [
-      "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1200&auto=format"
+      "/Images/Techwisdom.png",
+      "/Images/Techwisdom%202.png",
+      "/Images/Techwisdom%203.png"
     ],
     "links": {
-      "demo": "https://www.bookverse.techwisdom.site",
-      "github": "https://github.com/TechWisdom-Technologies/BookVerse",
+      "demo": "https://www.techwisdom.site",
+      "github": "https://github.com/mujahidraj/TechWisdom-Technologies",
       "paper": null
     },
-    "featured": true,
+    "featured": false,
+    "size": "medium"
+  },
+  {
+    "id": "project-talukder-upvc",
+    "title": "Talukder uPVC",
+    "subtitle": "Product Catalogue & CMS Platform",
+    "description": "A full-stack TypeScript platform for Talukder uPVC Fittings with a public product catalogue (category and product-detail pages), company and factory information, downloads, certifications, enquiries, and wishlists — supported by extensive branded, factory, and product imagery.",
+    "story": "Its protected administration area handles authentication, products, categories, CMS content, media, enquiry management, bulk imports, dashboards, reporting, activity logs, and user management.",
+    "tags": ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "Prisma"],
+    "type": "e-commerce",
+    "status": "active",
+    "year": "2026",
+    "images": [
+      "/Images/Talukder-upvc.png",
+      "/Images/Talukder-upvc%202.png",
+      "/Images/Talukder-upvc%203.png",
+      "/Images/Talukder-upvc%204.png"
+    ],
+    "links": {
+      "demo": "https://www.talukder-upvc.com",
+      "github": "https://github.com/mujahidraj/Talukder-UPVC",
+      "paper": null
+    },
+    "featured": false,
     "size": "medium"
   },
   {
     "id": "project-ahb-study-abroad",
     "title": "AHB Study Abroad",
-    "subtitle": "Educational Consultancy Platform",
-    "description": "A comprehensive platform for AHB Study Abroad to manage student profiles, university applications, and visa processing workflows.",
-    "story": "Simplifying the complex journey of studying abroad through structured digital workflows.",
-    "tags": ["Next.js", "Education", "Consultancy", "Platform"],
+    "subtitle": "Bilingual Study-Abroad Consultancy Platform",
+    "description": "A full-stack, bilingual study-abroad consultancy platform offering destination guides, university information, services, IELTS resources, scholarship content, consultations, testimonials, and contact flows. Includes authentication, lead capture and course-registration forms, and a protected admin area for countries, universities, scholarships, English tests, announcements, visa approvals, testimonials, and leads.",
+    "story": "Uses Prisma with schema and seed data, API routes, destination and university datasets, and extensive branded assets.",
+    "tags": ["Next.js", "TypeScript", "Prisma"],
     "type": "agency-platform",
     "status": "active",
     "year": "2026",
     "images": [
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&auto=format"
+      "/Images/AHB%20Study%20Abroad.png"
     ],
     "links": {
-      "demo": null,
+      "demo": "https://www.ahbstudyabroad.com",
       "github": "https://github.com/TechWisdom-Technologies/ahb-study-abroad",
+      "paper": null
+    },
+    "featured": false,
+    "size": "medium"
+  },
+  {
+    "id": "project-cambry-study-abroad",
+    "title": "Cambry Study Abroad",
+    "subtitle": "Bilingual Study-Abroad Consultancy Platform",
+    "description": "A full-stack, bilingual study-abroad consultancy platform offering destination guides, university information, services, IELTS resources, scholarship content, consultations, testimonials, and contact flows. Includes authentication, lead capture and course-registration forms, and a protected admin area for countries, universities, scholarships, English tests, announcements, visa approvals, testimonials, and leads.",
+    "story": "Uses Prisma with schema and seed data, API routes, destination and university datasets, and extensive branded assets.",
+    "tags": ["React", "TypeScript", "Prisma"],
+    "type": "agency-platform",
+    "status": "active",
+    "year": "2026",
+    "images": [
+      "/Images/Cambry%20bd.png",
+      "/Images/Cambry%20bd%202.png",
+      "/Images/Cambry%20bd%203.png"
+    ],
+    "links": {
+      "demo": "https://www.cambrybd.com",
+      "github": "https://github.com/TechWisdom-Technologies/cambry-study-abroad",
       "paper": null
     },
     "featured": false,
@@ -108,18 +173,20 @@
   {
     "id": "project-whiteboard-education",
     "title": "Whiteboard Education",
-    "subtitle": "Digital Learning Environment",
-    "description": "An interactive educational platform focusing on digital whiteboard capabilities, live classes, and resource sharing for students and educators.",
-    "story": "Focused on bringing the traditional classroom experience into a seamless digital interface.",
-    "tags": ["React", "EdTech", "WebRTC", "Canvas", "Education"],
+    "subtitle": "World Class Aid — Educational Services Platform",
+    "description": "A comprehensive educational-services platform supporting student journeys for exploring and comparing universities and courses, submitting applications, finding scholarships and housing, accessing language-preparation and visa resources, and receiving event and support information — alongside dedicated partner workflows and a broad administrative dashboard.",
+    "story": "The repository includes Supabase migrations and notification functions, large university and course datasets with scraping/import utilities, operational documentation, Vitest tooling, and an MIT license.",
+    "tags": ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "Supabase"],
     "type": "web-app",
     "status": "active",
     "year": "2026",
     "images": [
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&auto=format"
+      "/Images/Whiteboard.png",
+      "/Images/whiteboard%202.png",
+      "/Images/whiteboard%203.png"
     ],
     "links": {
-      "demo": null,
+      "demo": "https://www.whiteboardeducation.org",
       "github": "https://github.com/TechWisdom-Technologies/whiteboard-education",
       "paper": null
     },
@@ -127,108 +194,67 @@
     "size": "medium"
   },
   {
-    "id": "project-cambry",
-    "title": "Cambry",
-    "subtitle": "Study Abroad Agency Platform",
-    "description": "A specialized platform designed for a study abroad agency to manage student applications, university partnerships, and consultation scheduling.",
-    "story": "This project required a deep focus on user trust and information architecture, ensuring students could navigate complex international education paths easily.",
-    "tags": ["React", "Management System", "Education", "Consultancy"],
-    "type": "agency-platform",
-    "status": "completed",
+    "id": "project-vocabvault",
+    "title": "VocabVault",
+    "subtitle": "Vocabulary Learning Platform",
+    "description": "A full-stack vocabulary-learning platform that guides learners through a structured 10-stage word-learning flow with listening, recall, writing, speaking, flashcards, daily words, progress analytics, streaks, achievements, challenges, notifications, and leaderboards. Deepgram and Gemini/Groq integrations power speech and AI-assisted activities.",
+    "story": "Includes Stripe and manual mobile-payment flows, a substantial admin dashboard for users, words, security, feedback, notifications, and transactions, plus Playwright testing, Sentry monitoring, and operational/security documentation.",
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Firebase", "Redis", "PWA"],
+    "type": "web-app",
+    "status": "active",
     "year": "2026",
     "images": [
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&auto=format"
+      "/Images/Vocabvaullt.png",
+      "/Images/Vocabvaullt%202.png"
     ],
     "links": {
-      "demo": null,
-      "github": "https://github.com/mujahidraj/cambry-2",
+      "demo": "https://www.vocabvault.site",
+      "github": "https://github.com/TechWisdom-Technologies/VocabVault",
       "paper": null
     },
     "featured": false,
     "size": "medium"
   },
   {
-    "id": "project-juta-express",
-    "title": "Juta Express",
-    "subtitle": "E-commerce for Footwear Imports",
-    "description": "A high-performance e-commerce platform specializing in quality shoes imported from China to the Bangladesh market. Includes real-time inventory and a local payment gateway.",
-    "story": "Juta Express streamlines cross-border commerce, solving the logistical and technical hurdles of bringing international products to a local audience.",
-    "tags": ["Next.js", "Prisma", "PostgreSQL", "E-commerce", "SSLCommerz"],
-    "type": "e-commerce",
-    "status": "production",
-    "year": "2025",
+    "id": "project-authentic-aura",
+    "title": "Authentic Aura",
+    "subtitle": "Personal Portfolio Website",
+    "description": "A polished personal portfolio website for Mujahid Raj, full-stack engineer and co-founder of TechWisdom Technologies. The site presents projects, services, career history, publications, certificates, testimonials, pricing, FAQs, a downloadable CV, and a contact panel.",
+    "story": "Built with React 18, TypeScript, Vite, Tailwind CSS, shadcn/ui, and Framer Motion, with TanStack Query supporting application state and data handling.",
+    "tags": ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "Framer Motion"],
+    "type": "web-app",
+    "status": "active",
+    "year": "2026",
     "images": [
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200&auto=format"
+      "/Images/Portfolio.png"
     ],
     "links": {
-      "demo": "https://juta-express.com",
-      "github": "https://github.com/mujahidraj/Juta-Express",
+      "demo": "https://www.mujahidraj.site",
+      "github": "https://github.com/mujahidraj/authentic-aura",
       "paper": null
     },
     "featured": false,
     "size": "medium"
   },
   {
-    "id": "project-command-center",
-    "title": "Tech Command Center",
-    "subtitle": "Custom CMS for Scalable Content",
-    "description": "A tailored Content Management System (CMS) designed for high flexibility and performance, allowing for custom data structures and internal administration of agency assets.",
-    "story": "Off-the-shelf CMS solutions weren't enough for our workflow. I built this to give us complete control over our content strategy and deployment.",
-    "tags": ["TypeScript", "Custom CMS", "Database Architecture", "Utility"],
-    "type": "utility",
+    "id": "project-techwisdom-hub",
+    "title": "TechWisdom Hub",
+    "subtitle": "ERP & Operations Platform",
+    "description": "A comprehensive ERP and operations platform with CRM lead pipelines, project and client portals, finance and invoicing, HR/payroll, tasks, meetings, messaging, reports, CMS, document management, AI assistance, workflows, audits, notifications, and KPI dashboards.",
+    "story": "Also supports PWA behavior, Android packaging through Capacitor, and desktop builds through Electron.",
+    "tags": ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "Supabase", "Capacitor", "Electron"],
+    "type": "agency-platform",
     "status": "active",
     "year": "2026",
     "images": [
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&auto=format"
     ],
     "links": {
-      "demo": null,
-      "github": "https://github.com/mujahidraj/tech-command-center",
+      "demo": "https://workspace.techwisdom.site",
+      "github": "https://github.com/mujahidraj/techwisdom-hub",
       "paper": null
     },
     "featured": false,
-    "size": "small"
-  },
-  {
-    "id": "project-news-portal",
-    "title": "News Portal PH",
-    "subtitle": "Dynamic Multi-category News Engine",
-    "description": "A robust news portal optimized for high-traffic content delivery. It supports real-time updates, ad management, and mobile-responsive layouts for mass readers.",
-    "story": "Information speed is everything. This project helped me master high-frequency API polling and frontend state management.",
-    "tags": ["React", "Tailwind CSS", "News", "API Integration"],
-    "type": "web-app",
-    "status": "completed",
-    "year": "2025",
-    "images": [
-      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&auto=format"
-    ],
-    "links": {
-      "demo": null,
-      "github": "https://github.com/mujahidraj/News-Portal-PH",
-      "paper": null
-    },
-    "featured": false,
-    "size": "small"
-  },
-  {
-    "id": "project-fitness-centre",
-    "title": "Fitness Centre PH",
-    "subtitle": "Gym & Health Management Platform",
-    "description": "A dedicated management system for fitness centers, enabling member tracking, class scheduling, and progress visualization for users.",
-    "story": "I wanted to combine technical utility with wellness, creating a dashboard that actually makes it easier for people to stay consistent with their health.",
-    "tags": ["React", "Express", "MongoDB", "Charts.js", "HealthTech"],
-    "type": "web-app",
-    "status": "stable",
-    "year": "2025",
-    "images": [
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&auto=format"
-    ],
-    "links": {
-      "demo": null,
-      "github": "https://github.com/mujahidraj/Fitness-Centre-PH",
-      "paper": null
-    },
-    "featured": false,
-    "size": "small"
+    "size": "medium"
   }
 ]

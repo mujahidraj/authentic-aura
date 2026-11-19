@@ -138,20 +138,6 @@ export function usePortfolioData() {
     ...projects,
     ...dataScienceWorks,
     ...wordpressWorks,
-    ...(publications.map(p => ({
-      id: p.id,
-      title: p.title,
-      subtitle: p.subtitle,
-      description: p.description,
-      story: p.story,
-      tags: p.tags,
-      type: 'publication',
-      year: p.year,
-      images: p.images,
-      links: p.links,
-      featured: p.featured,
-      size: 'medium' as const,
-    }))),
   ];
 
   // Extract all unique tags

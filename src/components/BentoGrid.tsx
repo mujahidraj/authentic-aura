@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef } from 'react';
 import { motion, AnimatePresence, LayoutGroup, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { ExternalLink, Github, ArrowUpRight, Layers, Code2, Globe, FlaskConical, FileText, Sparkles } from 'lucide-react';
+import { ExternalLink, Github, ArrowUpRight, Layers, Code2, Globe, FlaskConical, FileText, Sparkles, Smartphone } from 'lucide-react';
 import { DetailOverlay } from './DetailOverlay';
 import type { PortfolioItem } from '../hooks/usePortfolioData';
 
@@ -13,6 +13,7 @@ interface BentoGridProps {
 const CATEGORIES = [
   { key: 'All', label: 'All Work', icon: Layers },
   { key: 'web', label: 'Web Apps', icon: Globe, types: ['web-app', 'e-commerce', 'agency', 'agency-platform', 'utility'] },
+  { key: 'mobile', label: 'Mobile', icon: Smartphone, types: ['mobile-app'] },
   { key: 'ds', label: 'Data Science', icon: FlaskConical, types: ['data-science'] },
   { key: 'wp', label: 'WordPress', icon: Code2, types: ['wordpress'] },
   { key: 'pub', label: 'Research', icon: FileText, types: ['publication'] },
@@ -69,7 +70,7 @@ export function BentoGrid({ items }: BentoGridProps) {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-muted-foreground text-lg md:text-xl max-w-2xl leading-relaxed font-light"
         >
-          A curated collection spanning full-stack engineering, data science, research publications, and digital craft.
+          A curated collection spanning full-stack web platforms, mobile apps, and data science.
         </motion.p>
       </div>
 
@@ -82,7 +83,7 @@ export function BentoGrid({ items }: BentoGridProps) {
         className="flex items-center gap-1 mb-12 p-1.5 rounded-2xl w-fit overflow-x-auto"
         style={{ background: 'hsl(var(--muted) / 0.5)', border: '1px solid hsl(var(--border) / 0.5)' }}
       >
-        {CATEGORIES.map(cat => {
+        {CATEGORIES.filter(cat => cat.key === 'All' || items.some(i => cat.types?.includes(i.type))).map(cat => {
           const Icon = cat.icon;
           const isActive = activeCategory === cat.key;
           const count = cat.key === 'All'
@@ -181,7 +182,12 @@ export function BentoGrid({ items }: BentoGridProps) {
         </motion.div>
       )}
 
-      <DetailOverlay item={selectedItem} onClose={() => setSelectedItem(null)} />
+      <DetailOverlay
+        item={selectedItem}
+        onClose={() => setSelectedItem(null)}
+        items={[...featured, ...rest]}
+        onNavigate={setSelectedItem}
+      />
     </div>
   );
 }
@@ -218,10 +224,11 @@ function FeaturedCard({ item, index, onClick }: { item: PortfolioItem; index: nu
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => { setIsHovered(false); setSpotPos({ x: 50, y: 50 }); }}
       onClick={onClick}
-      className="group relative overflow-hidden rounded-3xl cursor-none min-h-[380px] md:min-h-[420px]"
+      className="group relative overflow-hidden rounded-3xl cursor-none flex flex-col"
       style={{
+        background: 'hsl(var(--card))',
         border: isHovered
-          ? '1px solid hsl(var(--primary) / 0.4)'
+          ? '1px solid hsl(var(--primary) / 0.45)'
           : '1px solid hsl(var(--border) / 0.6)',
         boxShadow: isHovered
           ? '0 25px 80px hsl(0 0% 0% / 0.6), 0 0 0 1px hsl(var(--primary) / 0.15)'
@@ -229,134 +236,125 @@ function FeaturedCard({ item, index, onClick }: { item: PortfolioItem; index: nu
         transition: 'border-color 0.4s ease, box-shadow 0.4s ease',
       }}
     >
-      {/* Background Image */}
-      {item.images?.[0] && (
-        <motion.div
-          className="absolute inset-0"
-          animate={{ scale: isHovered ? 1.06 : 1 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <img
-            src={item.images[0]}
-            alt={item.title}
-            className="w-full h-full object-cover"
-          />
-        </motion.div>
-      )}
-
-      {/* Gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/10" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
-
       {/* Spotlight follow effect */}
       <div
-        className="absolute inset-0 pointer-events-none transition-opacity duration-500"
+        className="absolute inset-0 pointer-events-none transition-opacity duration-500 z-10"
         style={{
           opacity: isHovered ? 1 : 0,
-          background: `radial-gradient(600px circle at ${spotPos.x}% ${spotPos.y}%, hsl(var(--primary) / 0.08), transparent 60%)`,
+          background: `radial-gradient(600px circle at ${spotPos.x}% ${spotPos.y}%, hsl(var(--primary) / 0.07), transparent 60%)`,
         }}
       />
 
-      {/* Top badges */}
-      <div className="absolute top-5 left-5 right-5 flex items-center justify-between z-10">
-        <div className="flex items-center gap-2">
-          <span
-            className="px-3 py-1 rounded-full font-mono text-[10px] uppercase tracking-wider font-semibold backdrop-blur-md"
-            style={{
-              background: 'hsl(var(--primary) / 0.2)',
-              color: 'hsl(var(--primary))',
-              border: '1px solid hsl(var(--primary) / 0.3)',
-            }}
-          >
-            ★ Featured
-          </span>
-          <span
-            className="px-3 py-1 rounded-full font-mono text-[10px] uppercase tracking-wider backdrop-blur-md"
-            style={{
-              background: 'hsl(0 0% 0% / 0.4)',
-              color: 'hsl(0 0% 80%)',
-              border: '1px solid hsl(0 0% 100% / 0.1)',
-            }}
-          >
-            {typeLabel}
+      {/* Full uncropped image showcase */}
+      {item.images?.[0] && (
+        <div
+          className="relative w-full h-56 sm:h-64 md:h-72 p-3 flex items-center justify-center overflow-hidden border-b shrink-0"
+          style={{
+            background: 'hsl(0 0% 4%)',
+            borderColor: 'hsl(var(--border) / 0.5)',
+          }}
+        >
+          <motion.img
+            src={item.images[0]}
+            alt={item.title}
+            loading="lazy"
+            className="w-full h-full object-contain rounded-xl"
+            animate={{ scale: isHovered ? 1.025 : 1 }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          />
+        </div>
+      )}
+
+      {/* Content */}
+      <div className="relative z-10 p-6 md:p-7 flex flex-col flex-1">
+        {/* Top badges */}
+        <div className="flex items-center justify-between gap-2 mb-3">
+          <div className="flex items-center gap-2">
+            <span
+              className="px-3 py-1 rounded-full font-mono text-[10px] uppercase tracking-wider font-semibold"
+              style={{
+                background: 'hsl(var(--primary) / 0.15)',
+                color: 'hsl(var(--primary))',
+                border: '1px solid hsl(var(--primary) / 0.3)',
+              }}
+            >
+              ★ Featured
+            </span>
+            <span
+              className="px-3 py-1 rounded-full font-mono text-[10px] uppercase tracking-wider"
+              style={{
+                background: 'hsl(var(--muted) / 0.7)',
+                color: 'hsl(var(--muted-foreground))',
+                border: '1px solid hsl(var(--border) / 0.6)',
+              }}
+            >
+              {typeLabel}
+            </span>
+          </div>
+          <span className="font-mono text-xs text-muted-foreground">{item.year}</span>
+        </div>
+
+        <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 mb-2 leading-tight">
+          {item.title}
+        </h3>
+        <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-4 line-clamp-2">
+          {item.subtitle || item.description}
+        </p>
+
+        {/* Tags */}
+        <div className="flex flex-wrap gap-1.5 mb-5">
+          {item.tags.slice(0, 5).map(tag => (
+            <span
+              key={tag}
+              className="px-2.5 py-0.5 rounded-full font-mono text-[10px] font-medium"
+              style={{
+                background: 'hsl(var(--muted) / 0.6)',
+                color: 'hsl(var(--foreground) / 0.75)',
+                border: '1px solid hsl(var(--border) / 0.6)',
+              }}
+            >
+              {tag}
+            </span>
+          ))}
+          {item.tags.length > 5 && (
+            <span className="px-2 py-0.5 font-mono text-[10px] text-muted-foreground">+{item.tags.length - 5}</span>
+          )}
+        </div>
+
+        {/* Action row */}
+        <div className="flex items-center gap-3 mt-auto pt-2">
+          {item.links?.demo && (
+            <a
+              href={item.links.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={e => e.stopPropagation()}
+              className="flex items-center gap-2 px-4 py-2 rounded-full font-mono text-xs font-medium transition-all duration-200 hover:scale-105"
+              style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))' }}
+            >
+              <ExternalLink size={12} /> Live
+            </a>
+          )}
+          {item.links?.github && (
+            <a
+              href={item.links.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={e => e.stopPropagation()}
+              className="flex items-center gap-2 px-4 py-2 rounded-full font-mono text-xs font-medium transition-all duration-200 hover:scale-105"
+              style={{
+                background: 'hsl(var(--muted) / 0.8)',
+                color: 'hsl(var(--foreground) / 0.9)',
+                border: '1px solid hsl(var(--border))',
+              }}
+            >
+              <Github size={12} /> Source
+            </a>
+          )}
+          <span className="ml-auto font-mono text-xs text-primary flex items-center gap-1">
+            View Details <ArrowUpRight size={12} />
           </span>
         </div>
-        <span className="font-mono text-xs text-white/50">{item.year}</span>
-      </div>
-
-      {/* Content overlay */}
-      <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 z-10">
-        <motion.div
-          animate={{ y: isHovered ? -8 : 0 }}
-          transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <h3 className="font-display text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
-            {item.title}
-          </h3>
-          <p className="text-white/60 text-sm md:text-base leading-relaxed mb-4 line-clamp-2">
-            {item.subtitle || item.description}
-          </p>
-
-          {/* Tags */}
-          <div className="flex flex-wrap gap-1.5 mb-5">
-            {item.tags.slice(0, 5).map(tag => (
-              <span
-                key={tag}
-                className="px-2.5 py-0.5 rounded-full font-mono text-[10px] font-medium"
-                style={{
-                  background: 'hsl(0 0% 100% / 0.08)',
-                  color: 'hsl(0 0% 100% / 0.7)',
-                  border: '1px solid hsl(0 0% 100% / 0.1)',
-                }}
-              >
-                {tag}
-              </span>
-            ))}
-            {item.tags.length > 5 && (
-              <span className="px-2 py-0.5 font-mono text-[10px] text-white/40">+{item.tags.length - 5}</span>
-            )}
-          </div>
-
-          {/* Action row */}
-          <motion.div
-            initial={false}
-            animate={{ opacity: isHovered ? 1 : 0, y: isHovered ? 0 : 10 }}
-            transition={{ duration: 0.3, delay: 0.05 }}
-            className="flex items-center gap-3"
-          >
-            {item.links?.demo && (
-              <a
-                href={item.links.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={e => e.stopPropagation()}
-                className="flex items-center gap-2 px-4 py-2 rounded-full font-mono text-xs font-medium transition-all duration-200 hover:scale-105"
-                style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))' }}
-              >
-                <ExternalLink size={12} /> Live
-              </a>
-            )}
-            {item.links?.github && (
-              <a
-                href={item.links.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={e => e.stopPropagation()}
-                className="flex items-center gap-2 px-4 py-2 rounded-full font-mono text-xs font-medium backdrop-blur-md transition-all duration-200 hover:scale-105"
-                style={{
-                  background: 'hsl(0 0% 100% / 0.1)',
-                  color: 'hsl(0 0% 100% / 0.9)',
-                  border: '1px solid hsl(0 0% 100% / 0.15)',
-                }}
-              >
-                <Github size={12} /> Source
-              </a>
-            )}
-            <span className="ml-auto font-mono text-xs text-primary flex items-center gap-1">
-              View Details <ArrowUpRight size={12} />
-            </span>
-          </motion.div>
-        </motion.div>
       </div>
     </motion.div>
   );
@@ -433,21 +431,22 @@ function StandardCard({ item, index, onClick }: { item: PortfolioItem; index: nu
         }}
       />
 
-      {/* Image section */}
+      {/* Image section — full uncropped fit */}
       {item.images?.[0] && !isDS && (
-        <div className="relative h-44 overflow-hidden rounded-t-2xl shrink-0">
+        <div
+          className="relative z-10 h-48 p-2.5 flex items-center justify-center overflow-hidden rounded-t-2xl border-b shrink-0"
+          style={{
+            background: 'hsl(0 0% 4%)',
+            borderColor: 'hsl(var(--border) / 0.45)',
+          }}
+        >
           <motion.img
             src={item.images[0]}
             alt={item.title}
-            className="w-full h-full object-cover"
-            animate={{ scale: isHovered ? 1.05 : 1 }}
+            loading="lazy"
+            className="w-full h-full object-contain rounded-lg"
+            animate={{ scale: isHovered ? 1.03 : 1 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background: `linear-gradient(to bottom, transparent 30%, ${isDS ? 'hsl(220 15% 6%)' : 'hsl(var(--card))'})`,
-            }}
           />
         </div>
       )}
@@ -547,6 +546,7 @@ function getTypeLabel(type: string): string {
     'agency': 'Agency',
     'agency-platform': 'Platform',
     'utility': 'Utility',
+    'mobile-app': 'Mobile App',
     'data-science': 'Data Science',
     'wordpress': 'WordPress',
     'publication': 'Research',
@@ -561,6 +561,7 @@ function getTypeColor(type: string): string {
     'agency': 'var(--primary)',
     'agency-platform': 'var(--primary)',
     'utility': 'var(--primary)',
+    'mobile-app': '160 70% 50%',
     'data-science': 'var(--accent)',
     'wordpress': '220 70% 65%',
     'publication': '280 60% 65%',

@@ -1,114 +1,51 @@
 [
   {
     "id": "ds-skin-disease",
-    "title": "Automated Skin Disease Classification",
-    "subtitle": "Deep Ensemble Learning for Dermatology",
-    "description": "A high-precision framework using Balanced Transfer Learning and Deep Ensemble methods to classify five distinct skin conditions. Optimized across eleven deep learning architectures to ensure diagnostic accuracy in resource-limited settings.",
-    "story": "This research aimed to bridge the gap in dermatological healthcare accessibility. By leveraging a novel repository of 9,548 images, we achieved over 99% accuracy, making high-quality diagnosis possible via telemedicine.",
-    "tags": ["Python", "Deep Learning", "CNN", "Transfer Learning", "Ensemble Learning", "PyTorch", "Healthcare AI"],
+    "title": "Skin Diseases Classification",
+    "subtitle": "Transfer Learning for Dermatology",
+    "description": "A TensorFlow/Keras research project for classifying five dermatological conditions — acne, hyperpigmentation, nail psoriasis, SJS–TEN, and vitiligo — from images. It prepares a balanced dataset of up to 2,000 images per class, applies augmentation, and splits the data into 70% training, 15% validation, and 15% testing sets.",
+    "story": "The notebooks and matching Python scripts evaluate transfer-learning models including VGG16, ResNet50, DenseNet121, and hybrid/ensemble architectures, with accuracy plots, classification reports, confusion matrices, and Grad-CAM explainability workflows.",
+    "tags": ["Python", "TensorFlow", "Keras", "Transfer Learning", "Grad-CAM"],
     "type": "data-science",
-    "status": "published",
-    "year": "2024",
+    "status": "completed",
+    "year": "2025",
     "images": [
       "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&auto=format"
     ],
     "links": {
       "demo": null,
       "github": "https://github.com/mujahidraj/Skin-Diseases-Classification",
-      "paper": "#"
-    },
-    "featured": true,
-    "size": "large",
-    "notebookType": "jupyter",
-    "codeSnippet": "import torch.nn as nn\nfrom torchvision import models\n\ndef build_ensemble_model(num_classes=5):\n    # Using EfficientNetB0 as a base for the ensemble\n    base_model = models.efficientnet_b0(pretrained=True)\n    for param in base_model.parameters():\n        param.requires_grad = False\n        \n    # Custom head for skin lesion classification\n    base_model.classifier = nn.Sequential(\n        nn.Linear(1280, 512),\n        nn.ReLU(),\n        nn.Dropout(0.4),\n        nn.Linear(512, num_classes)\n    )\n    return base_model\n\n# Balanced training approach\ncriterion = nn.CrossEntropyLoss(weight=class_weights)\noptimizer = torch.optim.Adam(model.parameters(), lr=0.001)",
-    "metrics": {
-      "accuracy": "99.1%",
-      "dataset": "9,548 images",
-      "architectures": "11 Optimized Models"
-    }
-  },
-  {
-    "id": "ds-rent-analysis",
-    "title": "Dhaka Rent Analysis & Prediction",
-    "subtitle": "Data-driven Real Estate Insights",
-    "description": "A comprehensive data science project involving scraping, cleaning, and analyzing rental price trends across various zones in Dhaka. Features a predictive model to estimate fair market rent based on location, size, and amenities.",
-    "story": "Finding an affordable home in Dhaka shouldn't be guesswork. I built this tool to visualize price distribution and help tenants understand where they get the best value for their money.",
-    "tags": ["Python", "Web Scraping", "Regression", "Data Visualization", "Pandas", "Scikit-Learn", "Matplotlib"],
-    "type": "data-science",
-    "status": "completed",
-    "year": "2025",
-    "images": [
-      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1200&auto=format"
-    ],
-    "links": {
-      "demo": null,
-      "github": "https://github.com/mujahidraj/Rent-Analysis-in-Dhaka",
-      "paper": null
-    },
-    "featured": true,
-    "size": "large",
-    "notebookType": "jupyter",
-    "codeSnippet": "import pandas as pd\nimport seaborn as sns\nfrom sklearn.ensemble import RandomForestRegressor\n\n# Analyze price per square foot across Dhaka zones\ndf['price_per_sqft'] = df['rent'] / df['area']\nzone_pivot = df.groupby('zone')['price_per_sqft'].median().sort_values()\n\n# Rent Prediction Model\nX = df[['area', 'bedrooms', 'bathrooms', 'encoded_zone']]\ny = df['rent']\n\nrf_model = RandomForestRegressor(n_estimators=100, random_state=42)\nrf_model.fit(X_train, y_train)\nprint(f\"R² Score: {rf_model.score(X_test, y_test):.2f}\")",
-    "metrics": {
-      "r2": "0.82",
-      "data_points": "5,000+ Listings",
-      "coverage": "All Major Dhaka Zones"
-    }
-  },
-  {
-    "id": "ds-emotion-recognition",
-    "title": "Facial Emotion Recognition",
-    "subtitle": "Computer Vision for Human Sentiment",
-    "description": "Developed a real-time emotion recognition system using deep convolutional neural networks. The model interprets facial expressions to categorize emotions like happiness, sadness, anger, and neutral states.",
-    "story": "How can machines understand human feelings? This notebook explores the intersection of Computer Vision and psychology to create more empathetic AI interfaces.",
-    "tags": ["Python", "Computer Vision", "OpenCV", "TensorFlow", "Keras", "Deep Learning"],
-    "type": "data-science",
-    "status": "stable",
-    "year": "2024",
-    "images": [
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&auto=format"
-    ],
-    "links": {
-      "demo": null,
-      "github": "https://github.com/mujahidraj/Facial-Emotion-Recognition-Notebook",
       "paper": null
     },
     "featured": false,
     "size": "medium",
     "notebookType": "jupyter",
-    "codeSnippet": "import cv2\nfrom keras.models import load_model\n\n# Load pre-trained FER model\nmodel = load_model('emotion_model.h5')\nface_haar_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')\n\ndef detect_emotion(frame):\n    gray_img = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)\n    faces_detected = face_haar_cascade.detectMultiScale(gray_img, 1.32, 5)\n    \n    for (x, y, w, h) in faces_detected:\n        roi_gray = gray_img[y:y+w, x:x+h]\n        roi_gray = cv2.resize(roi_gray, (48, 48))\n        img_pixels = image.img_to_array(roi_gray)\n        # ... Normalize and Predict ...\n    return predictions",
     "metrics": {
-      "accuracy": "74.5%",
-      "fps": "30+ on CPU",
-      "categories": "7 Emotions"
+      "classes": "5",
+      "split": "70 / 15 / 15",
+      "models": "VGG16 · ResNet50 · DenseNet121"
     }
   },
   {
-    "id": "ds-news-preprocessing",
-    "title": "News Scrapping & Pre-processing",
-    "subtitle": "Automated Pipeline for Bengali Media",
-    "description": "A robust data engineering pipeline built to scrape news articles from various online portals and apply advanced pre-processing techniques, including tokenization and noise reduction, for downstream NLP tasks.",
-    "story": "Data cleaning is 80% of the work in Data Science. I built this pipeline to automate the tedious parts of gathering a high-quality Bengali text corpus for TechWisdom's AI research.",
-    "tags": ["Python", "BeautifulSoup", "Selenium", "NLTK", "Regex", "Data Engineering"],
+    "id": "ds-heart-quantum",
+    "title": "Heart Disease Quantum Data Preprocessing",
+    "subtitle": "R-based Dataset Preparation",
+    "description": "An R-based data preprocessing project for a quantum machine learning dataset aimed at heart disease prediction. The workflow includes normalization, missing value imputation, and correlation analysis tailored for the dataset's unique quantum-inspired features.",
+    "story": "The final output is a clean, analysis-ready dataset for building robust classification models.",
+    "tags": ["R", "Data Preprocessing", "Quantum ML", "Healthcare"],
     "type": "data-science",
     "status": "completed",
     "year": "2025",
     "images": [
-      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&auto=format"
+      "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1200&auto=format"
     ],
     "links": {
       "demo": null,
-      "github": "https://github.com/mujahidraj/News-scrapping-and-Pre-processing-",
+      "github": "https://github.com/mujahidraj/Heart-Prediction-Quantum-Dataset-Preprocessing",
       "paper": null
     },
     "featured": false,
     "size": "medium",
-    "notebookType": "jupyter",
-    "codeSnippet": "from bs4 import BeautifulSoup\nimport requests\n\ndef scrape_portal(url):\n    response = requests.get(url)\n    soup = BeautifulSoup(response.text, 'html.parser')\n    # Extracting headlines and article body\n    articles = []\n    for item in soup.find_all('article'):\n        headline = item.find('h2').text.strip()\n        content = item.find('div', class_='body').text.strip()\n        articles.append({'headline': headline, 'text': content})\n    return pd.DataFrame(articles)\n\n# Apply Bengali specific cleaning\ndef clean_bengali_text(text):\n    # Removing punctuation and special characters\n    return re.sub(r'[\\u0980-\\u09FF]+', '', text)",
-    "metrics": {
-      "sources": "5+ Portals",
-      "automation": "100%",
-      "output": "Clean JSON/CSV"
-    }
+    "notebookType": "script"
   }
 ]
