@@ -3,18 +3,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MagneticButton } from './MagneticButton';
 
 const NAV_LINKS = [
-  { label: 'Home', href: '#home' }, // Added Home
+  { label: 'Home', href: '#home' },
   { label: 'Work', href: '#work' },
-  { label: 'Service', href: '#service' },
   { label: 'Journey', href: '#journey' },
+  { label: 'Service', href: '#service' },
   { label: 'Publications', href: '#research' },
   { label: 'Achievements', href: '#achievements' },
   { label: 'Library', href: '#library' },
   { label: 'Testimonials', href: '#testimonials' },
   { label: 'Pricing', href: '#pricing' },
   { label: 'FAQ', href: '#faq' },
-
-
 ];
 
 interface NavBarProps {

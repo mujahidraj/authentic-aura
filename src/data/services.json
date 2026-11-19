@@ -162,42 +162,37 @@
   {
     "id": "s5",
     "title": "AI Automation",
-    "tagline": "LLM integrations, intelligent agents & automated business workflows",
-    "description": "Designing and deploying intelligent AI workflows, LLM-powered product features, and automated pipelines that eliminate repetitive work and scale operations.",
+    "tagline": "No-code AI workflows, LLM integrations & smart process automation",
+    "description": "Exploring and building no-code AI automation workflows and LLM-powered processes using visual automation platforms to eliminate repetitive manual work — with plans to expand into coded automation in the future, In Shaa Allah.",
     "icon": "Bot",
-    "tags": ["AI Agents", "Workflows", "LLM Integration"],
+    "tags": ["No-Code Automation", "LLM Workflows", "n8n · Zapier · Make"],
     "whatICanDo": [
-      "Integrating LLMs (Gemini, Groq) directly into web apps for AI-assisted writing, learning, summarization, and creative generation",
-      "Building voice & speech AI features (speech-to-text, pronunciation practice, text-to-speech) with Deepgram and speech APIs",
-      "Creating interactive AI requirement assistants, support bots, and internal workspace copilots",
-      "Automating data collection, scraping/import pipelines, scheduled notifications, and multi-step business workflows",
-      "Orchestrating reliable API & webhook automations with structured outputs, guardrails, and admin oversight"
+      "Building no-code multi-step workflows connecting forms, spreadsheets, emails, CRMs, and team tools using n8n, Zapier, and Make.com",
+      "Integrating LLMs (ChatGPT, Claude, Google Gemini) into no-code pipelines for automated drafting, summarization, categorization, and replies",
+      "Automating lead capture, inquiry routing, follow-up emails, and content publishing without writing custom backend glue code",
+      "Designing structured prompt workflows, AI workspaces, and connected knowledge bases in Notion and Airtable",
+      "Actively exploring advanced no-code AI automation systems, with coded agentic automation on my future roadmap In Shaa Allah"
     ],
     "whatIKnow": [
-      "Gemini API", "Groq", "Deepgram Speech AI", "LLM Integration", "AI Agents",
-      "Prompt Engineering", "Workflow Automation", "Web Scraping & ETL",
-      "Webhook & API Orchestration", "Text-to-Speech", "AI-Assisted UX"
+      "n8n (No-Code)", "Zapier", "Make.com", "ChatGPT / OpenAI", "Claude",
+      "Google Gemini", "Perplexity", "Prompt Engineering", "No-Code LLM Workflows",
+      "Notion Automation", "Airtable Automation", "IFTTT", "Automated Email & Lead Flows"
     ],
     "provenWork": [
       {
-        "name": "VocabVault",
-        "summary": "Deepgram speech integration and Gemini/Groq AI-assisted vocabulary learning activities",
-        "url": "https://www.vocabvault.site"
+        "name": "No-Code AI Workflow Exploration",
+        "summary": "Designing visual automation flows with n8n, Zapier, and Make connected to LLMs for content, lead, and task automation",
+        "url": null
       },
       {
-        "name": "BookVerse",
-        "summary": "AI-powered writing, cover, and illustration tools paired with text-to-speech reading",
-        "url": "https://www.bookversebd.site"
+        "name": "LLM Productivity & Prompt Systems",
+        "summary": "Structured prompt pipelines using ChatGPT, Claude, and Gemini for research, documentation, and operational workflows",
+        "url": null
       },
       {
-        "name": "TechWisdom Hub",
-        "summary": "Built-in AI assistance and automated workflows for agency operations and reporting",
-        "url": "https://workspace.techwisdom.site"
-      },
-      {
-        "name": "TechWisdom Technologies",
-        "summary": "Interactive requirement assistant guiding clients through project scoping",
-        "url": "https://www.techwisdom.site"
+        "name": "Future Roadmap (In Shaa Allah)",
+        "summary": "Transitioning from no-code automation architectures into coded AI automation and autonomous agent systems",
+        "url": null
       }
     ]
   }

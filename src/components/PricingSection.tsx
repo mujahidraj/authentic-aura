@@ -10,11 +10,11 @@ interface PricingSectionProps {
 }
 
 const categoryAccents: Record<string, string> = {
-  'Machine Learning & AI': 'hsl(var(--accent))',
-  'Full-Stack Development': 'hsl(var(--primary))',
-  'Data Engineering & Analytics': 'hsl(185 70% 60%)',
-  'WordPress & CMS': 'hsl(220 70% 65%)',
-  'Strategy & Consulting': 'hsl(38 80% 75%)',
+  'Web Development': 'hsl(var(--primary))',
+  'UI/UX Design': 'hsl(280 75% 68%)',
+  'Data Analysis': 'hsl(185 80% 55%)',
+  'IT Support & Consulting': 'hsl(38 80% 72%)',
+  'AI Automation': 'hsl(150 75% 52%)',
 };
 
 export function PricingSection({ pricing, onContact }: PricingSectionProps) {
@@ -69,7 +69,7 @@ export function PricingSection({ pricing, onContact }: PricingSectionProps) {
                       className="font-display text-4xl font-black leading-none"
                       style={{ color: accent }}
                     >
-                      ${cat.rateHourly}
+                      {cat.rateHourly} Taka
                     </span>
                     <span className="font-mono text-sm text-muted-foreground">/hr</span>
                   </div>

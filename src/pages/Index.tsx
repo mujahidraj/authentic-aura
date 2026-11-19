@@ -46,9 +46,9 @@ const Index = () => {
   // Updated Navigation Links
   const navLinks = [
     { label: 'Work', href: '#work' },
-    { label: 'Service', href: '#service' },
-    { label: 'Why Me', href: '#why-me' }, // New Link
     { label: 'Journey', href: '#journey' },
+    { label: 'Service', href: '#service' },
+    { label: 'Why Me', href: '#why-me' },
     { label: 'Publications', href: '#research' },
     { label: 'Achievements', href: '#achievements' },
     { label: 'Library', href: '#library' },
@@ -64,6 +64,7 @@ const Index = () => {
 
       <Suspense fallback={null}>
          <CommandPalette />
+         <SystemStatus />
       </Suspense>
 
       <GlobeHero onScrollToWork={scrollToWork} />
@@ -106,13 +107,20 @@ const Index = () => {
            </SectionWrapper>
         </div>
 
-        {/* 3. Services */}
+        {/* 3. The Journey So Far */}
+        <div id="journey" className="scroll-mt-24 bg-gradient-to-b from-transparent to-black/30 py-24">
+           <SectionWrapper className="px-4 md:px-8 lg:px-16 max-w-6xl mx-auto">
+             <LifeTimeline items={timeline} />
+           </SectionWrapper>
+        </div>
+
+        {/* 4. Services */}
         <ServicesSection />
 
-        {/* 4. Why Choose Me (NEW) */}
+        {/* 5. Why Choose Me */}
         <WhyChooseMe />
 
-        {/* 5. Tech Stack */}
+        {/* 6. Tech Stack */}
         <SectionWrapper className="w-full px-4 md:px-8 max-w-7xl mx-auto py-32">
           <div className="mb-12 text-center">
              <h3 className="text-2xl font-mono uppercase tracking-widest text-muted-foreground">Tech Ecosystem</h3>
@@ -121,13 +129,6 @@ const Index = () => {
             <TechConstellation />
           </Suspense>
         </SectionWrapper>
-
-        {/* 6. Journey */}
-        <div id="journey" className="scroll-mt-24 bg-gradient-to-b from-transparent to-black/30 py-24">
-           <SectionWrapper className="px-4 md:px-8 lg:px-16 max-w-6xl mx-auto">
-             <LifeTimeline items={timeline} />
-           </SectionWrapper>
-        </div>
 
         {/* 7. Research */}
         <div id="research" className="scroll-mt-24 py-24">
@@ -170,7 +171,6 @@ const Index = () => {
                        Operating from Dhaka, collaborating worldwide. 
                        I work across time zones to deliver exceptional results.
                     </p>
-                    <Suspense fallback={null}><SystemStatus /></Suspense>
                  </div>
                  <div className="w-full">
                     <Suspense fallback={<div className="h-96 w-full bg-white/5 rounded-3xl animate-pulse" />}>

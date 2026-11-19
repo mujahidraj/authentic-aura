@@ -1,57 +1,57 @@
 {
   "headline": "Transparent rates. No surprises.",
-  "currency": "USD",
-  "note": "Rates are for remote engagements. In-person consulting in South Asia available at adjusted local rates.",
+  "currency": "Taka (BDT)",
+  "note": "Flexible hourly and project-based engagements. Custom quotes available based on project scope.",
   "categories": [
     {
       "id": "price-webdev",
       "type": "Web Development",
       "description": "Custom web applications, frontend/backend engineering, and full-stack solutions",
-      "rateHourly": 60,
-      "rateProject": "From $1,500",
+      "rateHourly": 250,
+      "rateProject": "Custom / Project-based",
       "timeline": "3 – 12 weeks",
-      "deliverables": ["Responsive web application", "API integration", "Deployment setup", "30-day bug support"],
-      "tags": ["React", "Node.js", "TypeScript", "Next.js", "MongoDB"]
+      "deliverables": ["Responsive web application", "API & database integration", "Deployment setup", "30-day bug support"],
+      "tags": ["React", "Next.js", "TypeScript", "Node.js", "Prisma", "PostgreSQL"]
     },
     {
       "id": "price-uiux",
       "type": "UI/UX Design",
       "description": "User-centric design, interactive wireframes, and high-fidelity prototyping",
-      "rateHourly": 50,
-      "rateProject": "From $800",
+      "rateHourly": 180,
+      "rateProject": "Custom / Project-based",
       "timeline": "2 – 6 weeks",
-      "deliverables": ["User research report", "High-fidelity Figma files", "Interactive prototype", "Design system"],
-      "tags": ["Figma", "Adobe XD", "Wireframing", "Prototyping", "User Research"]
+      "deliverables": ["Wireframes & user flows", "High-fidelity Figma files", "Interactive prototype", "Design system"],
+      "tags": ["Figma", "Wireframing", "Prototyping", "Design Systems", "Brand Visuals"]
     },
     {
       "id": "price-data",
       "type": "Data Analysis",
-      "description": "Data processing, statistical modeling, and interactive BI dashboards",
-      "rateHourly": 55,
-      "rateProject": "From $1,000",
+      "description": "Data preprocessing, statistical analysis, ML pipelines, and visual insights",
+      "rateHourly": 210,
+      "rateProject": "Custom / Project-based",
       "timeline": "2 – 8 weeks",
-      "deliverables": ["Cleaned dataset", "Statistical analysis report", "Interactive dashboards", "Insights presentation"],
-      "tags": ["Excel", "SQL", "Python", "Power BI", "Data Visualization"]
-    },
-    {
-      "id": "price-wordpress",
-      "type": "WordPress Development",
-      "description": "Custom themes, WooCommerce setup, and performance-optimized CMS solutions",
-      "rateHourly": 45,
-      "rateProject": "From $600",
-      "timeline": "1 – 6 weeks",
-      "deliverables": ["Custom WordPress theme", "SEO optimization", "E-commerce integration", "Admin training session"],
-      "tags": ["WordPress", "PHP", "Elementor", "WooCommerce", "Speed Optimization"]
+      "deliverables": ["Cleaned & normalized dataset", "Statistical analysis report", "Visual charts & metrics", "Insights presentation"],
+      "tags": ["Python", "R", "TensorFlow", "Data Preprocessing", "Data Visualization"]
     },
     {
       "id": "price-it-support",
       "type": "IT Support & Consulting",
-      "description": "Technical troubleshooting, system configuration, and infrastructure maintenance",
-      "rateHourly": 40,
+      "description": "Technical troubleshooting, server deployment, system configuration, and infrastructure maintenance",
+      "rateHourly": 200,
       "rateProject": "Custom",
       "timeline": "Fixed task or Monthly retainer",
-      "deliverables": ["System health audit", "Security configuration", "Backup setup", "Technical documentation"],
-      "tags": ["Hardware", "Software", "Networking", "Security", "Troubleshooting"]
+      "deliverables": ["Server & hosting setup", "System health & security audit", "Backup configuration", "Technical documentation"],
+      "tags": ["Server Deployment", "Hardware", "Software", "Security", "Troubleshooting"]
+    },
+    {
+      "id": "price-ai-automation",
+      "type": "AI Automation",
+      "description": "No-code AI workflow automation, LLM integrations, and smart business process setups",
+      "rateHourly": 240,
+      "rateProject": "Custom / Workflow-based",
+      "timeline": "1 – 4 weeks",
+      "deliverables": ["No-code workflow setup (n8n / Zapier / Make)", "LLM prompt & response pipeline", "App & CRM connections", "Handover & workflow guide"],
+      "tags": ["No-Code Automation", "n8n", "Zapier", "Make.com", "LLM Workflows"]
     }
   ]
 }
